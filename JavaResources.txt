@@ -1,0 +1,8 @@
+Java Language Keywords:
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html
+
+Java Operators Precedence Table:
+https://www.cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html
+
+https://deloittedevelopment.udemy.com/course/java-the-complete-java-developer-course/
+https://deloittedevelopment.udemy.com/course/learn-java-programming-crash-course/
