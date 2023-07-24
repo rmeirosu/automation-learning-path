@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4d05eb2-190e-4ef1-b1b3-c70317f6b36e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/W3SchoolJavaTypeCasting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/W3SchoolJavaOperators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,37 +48,42 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.W3SchoolJavaTypeCasting (3)">
-    <configuration name="TestClass (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestClass" />
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.UdemyJavaCrashCourse">
+    <configuration name="UdemyJavaCrashCourse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UdemyJavaCrashCourse" />
       <module name="AutomationLearningPath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="W3SchoolJavaTypeCasting (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="W3SchoolJavaTypeCasting" />
+    <configuration name="W3SchoolJavaOperators (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="W3SchoolJavaOperators" />
       <module name="AutomationLearningPath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="W3SchoolJavaTypeCasting (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="W3SchoolJavaTypeCasting" />
+    <configuration name="W3SchoolJavaOperators (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="W3SchoolJavaOperators" />
       <module name="AutomationLearningPath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="W3SchoolJavaTypeCasting (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="W3SchoolJavaTypeCasting" />
+    <configuration name="W3SchoolJavaOperators (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="W3SchoolJavaOperators" />
       <module name="AutomationLearningPath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="W3SchoolJavaTypeCasting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="W3SchoolJavaTypeCasting" />
+    <configuration name="W3SchoolJavaOperators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="W3SchoolJavaOperators" />
       <module name="AutomationLearningPath" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -86,11 +91,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.W3SchoolJavaTypeCasting (3)" />
-        <item itemvalue="Application.W3SchoolJavaTypeCasting" />
-        <item itemvalue="Application.W3SchoolJavaTypeCasting (2)" />
-        <item itemvalue="Application.W3SchoolJavaTypeCasting (1)" />
-        <item itemvalue="Application.TestClass (1)" />
+        <item itemvalue="Application.UdemyJavaCrashCourse" />
+        <item itemvalue="Application.W3SchoolJavaOperators (3)" />
+        <item itemvalue="Application.W3SchoolJavaOperators" />
+        <item itemvalue="Application.W3SchoolJavaOperators (2)" />
+        <item itemvalue="Application.W3SchoolJavaOperators (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +136,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689944334674</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added W3SchoolJavaTypeCasting lesson exercises.">
+      <created>1690183422900</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690183422900</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added Udemy Java Crash Course section 8 exercises.">
+      <created>1690205778329</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690205778329</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -139,6 +158,8 @@
     <MESSAGE value="Completed section 4 from the udemy course." />
     <MESSAGE value="Completed W3School Java Data Types exercises." />
     <MESSAGE value="Added .idea folder to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added .idea folder to gitignore" />
+    <MESSAGE value="Added W3SchoolJavaTypeCasting lesson exercises." />
+    <MESSAGE value="Added Udemy Java Crash Course section 8 exercises." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Udemy Java Crash Course section 8 exercises." />
   </component>
 </project>
