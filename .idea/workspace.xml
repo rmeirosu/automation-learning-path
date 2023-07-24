@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4d05eb2-190e-4ef1-b1b3-c70317f6b36e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/W3SchoolJavaDataTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/W3SchoolJavaTypeCasting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,28 +48,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TestClass (1)">
-    <configuration name="ClassesIntro (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClassesIntro" />
-      <module name="AutomationLearningPath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClassesIntro (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClassesIntro" />
-      <module name="AutomationLearningPath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClassesIntro (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClassesIntro" />
-      <module name="AutomationLearningPath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.W3SchoolJavaTypeCasting (3)">
     <configuration name="TestClass (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestClass" />
       <module name="AutomationLearningPath" />
@@ -76,8 +56,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestClass" />
+    <configuration name="W3SchoolJavaTypeCasting (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="W3SchoolJavaTypeCasting" />
+      <module name="AutomationLearningPath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="W3SchoolJavaTypeCasting (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="W3SchoolJavaTypeCasting" />
+      <module name="AutomationLearningPath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="W3SchoolJavaTypeCasting (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="W3SchoolJavaTypeCasting" />
+      <module name="AutomationLearningPath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="W3SchoolJavaTypeCasting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="W3SchoolJavaTypeCasting" />
       <module name="AutomationLearningPath" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -85,11 +86,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.W3SchoolJavaTypeCasting (3)" />
+        <item itemvalue="Application.W3SchoolJavaTypeCasting" />
+        <item itemvalue="Application.W3SchoolJavaTypeCasting (2)" />
+        <item itemvalue="Application.W3SchoolJavaTypeCasting (1)" />
         <item itemvalue="Application.TestClass (1)" />
-        <item itemvalue="Application.TestClass" />
-        <item itemvalue="Application.ClassesIntro (4)" />
-        <item itemvalue="Application.ClassesIntro (3)" />
-        <item itemvalue="Application.ClassesIntro (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -116,12 +117,28 @@
       <option name="project" value="LOCAL" />
       <updated>1689943921210</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Completed W3School Java Data Types exercises.">
+      <created>1689944295031</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689944295031</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added .idea folder to gitignore">
+      <created>1689944334674</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689944334674</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit." />
     <MESSAGE value="Completed section 4 from the udemy course." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed section 4 from the udemy course." />
+    <MESSAGE value="Completed W3School Java Data Types exercises." />
+    <MESSAGE value="Added .idea folder to gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added .idea folder to gitignore" />
   </component>
 </project>
