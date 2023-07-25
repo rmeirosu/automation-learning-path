@@ -6,3 +6,8 @@ https://www.cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html
 
 https://deloittedevelopment.udemy.com/course/java-the-complete-java-developer-course/
 https://deloittedevelopment.udemy.com/course/learn-java-programming-crash-course/
+
+For loop:
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html
+
+https://docs.oracle.com/en/java/javase/11/docs/api/index.html
