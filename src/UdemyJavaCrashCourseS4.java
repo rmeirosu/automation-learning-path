@@ -1,6 +1,6 @@
 import java.math.BigDecimal;
 
-public class UdemyJavaCrashCourse {
+public class UdemyJavaCrashCourseS4 {
     /*
     https://deloittedevelopment.udemy.com/course/learn-java-programming-crash-course/learn/lecture/12530658#overview
      */
