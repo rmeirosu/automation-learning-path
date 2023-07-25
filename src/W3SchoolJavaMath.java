@@ -1,4 +1,4 @@
-public class JavaMath {
+public class W3SchoolJavaMath {
     /*
     The Java Math class has many methods that allows you to perform mathematical tasks on numbers.
      */
