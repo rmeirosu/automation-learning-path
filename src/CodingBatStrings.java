@@ -21,6 +21,12 @@ public class CodingBatStrings {
         System.out.println(makeAbba("Hi", "Bye"));
         System.out.println(makeAbba("Yo", "Alice"));
         System.out.println(makeAbba("What", "Up"));
+        System.out.println(makeAbba("aaa", "bbb"));
+        System.out.println(makeAbba("x", "y"));
+        System.out.println(makeAbba("x", ""));
+        System.out.println(makeAbba("", "y"));
+        System.out.println(makeAbba("Bo", "Ya"));
+        System.out.println(makeAbba("Ya", "Ya"));
         System.out.println("============");
 
         // makeTags
@@ -28,6 +34,10 @@ public class CodingBatStrings {
         System.out.println(makeTags("i", "Yay"));
         System.out.println(makeTags("i", "Hello"));
         System.out.println(makeTags("cite", "Yay"));
+        System.out.println(makeTags("address", "here"));
+        System.out.println(makeTags("body", "Heart"));
+        System.out.println(makeTags("i", "i"));
+        System.out.println(makeTags("i", ""));
         System.out.println("============");
 
         // makeOutWord
@@ -35,6 +45,8 @@ public class CodingBatStrings {
         System.out.println(makeOutWord("<<>>", "Yay"));
         System.out.println(makeOutWord("<<>>", "WooHoo"));
         System.out.println(makeOutWord("[[]]", "word"));
+        System.out.println(makeOutWord("HHoo", "Hello"));
+        System.out.println(makeOutWord("abyz", "YAY"));
         System.out.println("============");
 
         // extraEnd
@@ -42,6 +54,8 @@ public class CodingBatStrings {
         System.out.println(extraEnd("Hello"));
         System.out.println(extraEnd("ab"));
         System.out.println(extraEnd("Hi"));
+        System.out.println(extraEnd("Candy"));
+        System.out.println(extraEnd("Code"));
         System.out.println("============");
 
         // firstTwo
@@ -49,6 +63,11 @@ public class CodingBatStrings {
         System.out.println(firstTwo("Hello"));
         System.out.println(firstTwo("abcdefg"));
         System.out.println(firstTwo("ab"));
+        System.out.println(firstTwo("a"));
+        System.out.println(firstTwo(""));
+        System.out.println(firstTwo("Kitten"));
+        System.out.println(firstTwo("hi"));
+        System.out.println(firstTwo("hiya"));
         System.out.println("============");
 
         // firstHalf
@@ -56,6 +75,10 @@ public class CodingBatStrings {
         System.out.println(firstHalf("WooHoo"));
         System.out.println(firstHalf("HelloThere"));
         System.out.println(firstHalf("abcdef"));
+        System.out.println(firstHalf("ab"));
+        System.out.println(firstHalf(""));
+        System.out.println(firstHalf("0123456789"));
+        System.out.println(firstHalf("kitten"));
         System.out.println("============");
 
         // withoutEnd
@@ -63,6 +86,11 @@ public class CodingBatStrings {
         System.out.println(withoutEnd("Hello"));
         System.out.println(withoutEnd("java"));
         System.out.println(withoutEnd("coding"));
+        System.out.println(withoutEnd("code"));
+        System.out.println(withoutEnd("ab"));
+        System.out.println(withoutEnd("Chocolate!"));
+        System.out.println(withoutEnd("kitten"));
+        System.out.println(withoutEnd("woohoo"));
         System.out.println("============");
 
         // comboString
@@ -70,6 +98,14 @@ public class CodingBatStrings {
         System.out.println(comboString("Hello", "hi"));
         System.out.println(comboString("hi", "Hello"));
         System.out.println(comboString("aaa", "b"));
+        System.out.println(comboString("b", "aaa"));
+        System.out.println(comboString("aaa", ""));
+        System.out.println(comboString("", "bb"));
+        System.out.println(comboString("aaa", "1234"));
+        System.out.println(comboString("aaa", "bb"));
+        System.out.println(comboString("a", "bb"));
+        System.out.println(comboString("bb", "a"));
+        System.out.println(comboString("xyz", "ab"));
         System.out.println("============");
 
         // nonStart
@@ -77,6 +113,12 @@ public class CodingBatStrings {
         System.out.println(nonStart("Hello", "There"));
         System.out.println(nonStart("java", "code"));
         System.out.println(nonStart("shotl", "java"));
+        System.out.println(nonStart("ab", "xy"));
+        System.out.println(nonStart("ab", "x"));
+        System.out.println(nonStart("x", "ac"));
+        System.out.println(nonStart("a", "x"));
+        System.out.println(nonStart("kit", "kat"));
+        System.out.println(nonStart("mart", "dart"));
         System.out.println("============");
 
         // left2
@@ -84,6 +126,11 @@ public class CodingBatStrings {
         System.out.println(left2("Hello"));
         System.out.println(left2("java"));
         System.out.println(left2("Hi"));
+        System.out.println(left2("code"));
+        System.out.println(left2("cat"));
+        System.out.println(left2("12345"));
+        System.out.println(left2("Chocolate"));
+        System.out.println(left2("bricks"));
         System.out.println("============");
 
         // right2
@@ -91,6 +138,9 @@ public class CodingBatStrings {
         System.out.println(right2("Hello"));
         System.out.println(right2("java"));
         System.out.println(right2("Hi"));
+        System.out.println(right2("code"));
+        System.out.println(right2("cat"));
+        System.out.println(right2("12345"));
         System.out.println("============");
 
         // theEnd
@@ -98,6 +148,13 @@ public class CodingBatStrings {
         System.out.println(theEnd("Hello", true));
         System.out.println(theEnd("Hello", false));
         System.out.println(theEnd("oh", true));
+        System.out.println(theEnd("oh", false));
+        System.out.println(theEnd("x", true));
+        System.out.println(theEnd("x", false));
+        System.out.println(theEnd("java", true));
+        System.out.println(theEnd("chocolate", false));
+        System.out.println(theEnd("1234", true));
+        System.out.println(theEnd("code", false));
         System.out.println("============");
 
         // withouEnd2
@@ -105,6 +162,10 @@ public class CodingBatStrings {
         System.out.println(withouEnd2("Hello"));
         System.out.println(withouEnd2("abc"));
         System.out.println(withouEnd2("ab"));
+        System.out.println(withouEnd2("a"));
+        System.out.println(withouEnd2(""));
+        System.out.println(withouEnd2("coldy"));
+        System.out.println(withouEnd2("java code"));
         System.out.println("============");
 
         // middleTwo
@@ -112,6 +173,8 @@ public class CodingBatStrings {
         System.out.println(middleTwo("string"));
         System.out.println(middleTwo("code"));
         System.out.println(middleTwo("Practice"));
+        System.out.println(middleTwo("ab"));
+        System.out.println(middleTwo("0123456789"));
         System.out.println("============");
 
         // endsLy
@@ -119,6 +182,12 @@ public class CodingBatStrings {
         System.out.println(endsLy("oddly"));
         System.out.println(endsLy("y"));
         System.out.println(endsLy("oddy"));
+        System.out.println(endsLy("oddl"));
+        System.out.println(endsLy("olydd"));
+        System.out.println(endsLy("ly"));
+        System.out.println(endsLy(""));
+        System.out.println(endsLy("falsey"));
+        System.out.println(endsLy("evenly"));
         System.out.println("============");
 
         // nTwice
@@ -126,6 +195,10 @@ public class CodingBatStrings {
         System.out.println(nTwice("Hello", 2));
         System.out.println(nTwice("Chocolate", 3));
         System.out.println(nTwice("Chocolate", 1));
+        System.out.println(nTwice("Chocolate", 0));
+        System.out.println(nTwice("Hello", 4));
+        System.out.println(nTwice("Code", 4));
+        System.out.println(nTwice("Code", 2));
         System.out.println("============");
 
         // twoChar
@@ -133,6 +206,18 @@ public class CodingBatStrings {
         System.out.println(twoChar("java", 0));
         System.out.println(twoChar("java", 2));
         System.out.println(twoChar("java", 3));
+        System.out.println(twoChar("java", 4));
+        System.out.println(twoChar("java", -1));
+        System.out.println(twoChar("Hello", 0));
+        System.out.println(twoChar("Hello", 1));
+        System.out.println(twoChar("Hello", 99));
+        System.out.println(twoChar("Hello", 3));
+        System.out.println(twoChar("Hello", 4));
+        System.out.println(twoChar("Hello", 5));
+        System.out.println(twoChar("Hello", -7));
+        System.out.println(twoChar("Hello", 6));
+        System.out.println(twoChar("Hello", -1));
+        System.out.println(twoChar("yay", 0));
         System.out.println("============");
 
         // middleThree
@@ -140,6 +225,10 @@ public class CodingBatStrings {
         System.out.println(middleThree("Candy"));
         System.out.println(middleThree("and"));
         System.out.println(middleThree("solving"));
+        System.out.println(middleThree("Hi yet Hi"));
+        System.out.println(middleThree("java yet java"));
+        System.out.println(middleThree("Chocolate"));
+        System.out.println(middleThree("XabcxyzabcX"));
         System.out.println("============");
 
         // hasBad
@@ -147,6 +236,13 @@ public class CodingBatStrings {
         System.out.println(hasBad("badxx"));
         System.out.println(hasBad("xbadxx"));
         System.out.println(hasBad("xxbadxx"));
+        System.out.println(hasBad("code"));
+        System.out.println(hasBad("bad"));
+        System.out.println(hasBad("ba"));
+        System.out.println(hasBad("xba"));
+        System.out.println(hasBad("xbad"));
+        System.out.println(hasBad(""));
+        System.out.println(hasBad("badyy"));
         System.out.println("============");
 
         // atFirst
@@ -154,6 +250,10 @@ public class CodingBatStrings {
         System.out.println(atFirst("hello"));
         System.out.println(atFirst("hi"));
         System.out.println(atFirst("h"));
+        System.out.println(atFirst(""));
+        System.out.println(atFirst("kitten"));
+        System.out.println(atFirst("java"));
+        System.out.println(atFirst("j"));
         System.out.println("============");
 
         // lastChars
@@ -161,6 +261,12 @@ public class CodingBatStrings {
         System.out.println(lastChars("last", "chars"));
         System.out.println(lastChars("yo", "java"));
         System.out.println(lastChars("hi", ""));
+        System.out.println(lastChars("", "hello"));
+        System.out.println(lastChars("", ""));
+        System.out.println(lastChars("kitten", "hi"));
+        System.out.println(lastChars("k", "zip"));
+        System.out.println(lastChars("kitten", ""));
+        System.out.println(lastChars("kitten", "zip"));
         System.out.println("============");
 
         // conCat
@@ -168,6 +274,9 @@ public class CodingBatStrings {
         System.out.println(conCat("abc", "cat"));
         System.out.println(conCat("dog", "cat"));
         System.out.println(conCat("abc", ""));
+        System.out.println(conCat("", "cat"));
+        System.out.println(conCat("pig", "g"));
+        System.out.println(conCat("pig", "doggy"));
         System.out.println("============");
 
         // lastTwo
@@ -175,7 +284,117 @@ public class CodingBatStrings {
         System.out.println(lastTwo("coding"));
         System.out.println(lastTwo("cat"));
         System.out.println(lastTwo("ab"));
+        System.out.println(lastTwo("a"));
+        System.out.println(lastTwo(""));
         System.out.println("============");
+
+        //seeColor
+        System.out.println("CodingBat String-1 exercise: seeColor");
+        System.out.println(seeColor("redxx"));
+        System.out.println(seeColor("xxred"));
+        System.out.println(seeColor("blueTimes"));
+        System.out.println(seeColor("NoColor"));
+        System.out.println(seeColor("red"));
+        System.out.println(seeColor("re"));
+        System.out.println(seeColor("blu"));
+        System.out.println(seeColor("blue"));
+        System.out.println(seeColor("a"));
+        System.out.println(seeColor(""));
+        System.out.println("============");
+
+        // frontAgain
+        System.out.println("CodingBat String-1 exercise: frontAgain");
+        System.out.println(frontAgain("edited"));
+        System.out.println(frontAgain("edit"));
+        System.out.println(frontAgain("ed"));
+        System.out.println(frontAgain("jj"));
+        System.out.println(frontAgain("jjj"));
+        System.out.println(frontAgain("jjjj"));
+        System.out.println(frontAgain("jjjk"));
+        System.out.println(frontAgain("x"));
+        System.out.println(frontAgain(""));
+        System.out.println(frontAgain("java"));
+        System.out.println(frontAgain("javaja"));
+        System.out.println("============");
+
+        // minCat
+        System.out.println("CodingBat String-1 exercise: minCat");
+        System.out.println(minCat("Hello", "Hi"));
+        System.out.println(minCat("Hello", "java"));
+        System.out.println(minCat("java", "Hello"));
+        System.out.println(minCat("abc", "x"));
+        System.out.println(minCat("x", "abc"));
+        System.out.println(minCat("abc", ""));
+        System.out.println("============");
+
+        // extraFront
+        System.out.println("CodingBat String-1 exercise: extraFront");
+        System.out.println(extraFront("Hello"));
+        System.out.println(extraFront("ab"));
+        System.out.println(extraFront("H"));
+        System.out.println(extraFront(""));
+        System.out.println(extraFront("Candy"));
+        System.out.println(extraFront("Code"));
+        System.out.println("============");
+
+        // without2
+        System.out.println("CodingBat String-1 exercise: without2");
+        System.out.println(without2("HelloHe"));
+        System.out.println(without2("HelloHi"));
+        System.out.println(without2("Hi"));
+        System.out.println(without2("Chocolate"));
+        System.out.println(without2("xxx"));
+        System.out.println(without2("xx"));
+        System.out.println(without2("x"));
+        System.out.println(without2(""));
+        System.out.println(without2("Fruits"));
+        System.out.println("============");
+
+        // deFront
+        System.out.println("CodingBat String-1 exercise: deFront");
+        System.out.println(deFront("Hello"));
+        System.out.println(deFront("java"));
+        System.out.println(deFront("away"));
+        System.out.println(deFront("axy"));
+        System.out.println(deFront("abc"));
+        System.out.println(deFront("xby"));
+        System.out.println(deFront("ab"));
+        System.out.println(deFront("ax"));
+        System.out.println(deFront("axb"));
+        System.out.println(deFront("aaa"));
+        System.out.println(deFront("xbc"));
+        System.out.println(deFront("bbb"));
+        System.out.println(deFront("bazz"));
+        System.out.println(deFront("ba"));
+        System.out.println(deFront("abxyz"));
+        System.out.println(deFront("hi"));
+        System.out.println(deFront("his"));
+        System.out.println(deFront("xz"));
+        System.out.println(deFront("zzz"));
+        System.out.println("============");
+
+
+// TODO:
+//        // startWord
+//        System.out.println("CodingBat String-1 exercise: startWord");
+//        System.out.println(startWord("hippo", "hi"));
+//        System.out.println(startWord("hippo", "xip"));
+//        System.out.println(startWord("hippo", "i"));
+//        System.out.println(startWord("hippo", "ix"));
+//        System.out.println(startWord("h", "ix"));
+//        System.out.println(startWord("", "i"));
+//        System.out.println(startWord("hip", "zi"));
+//        System.out.println(startWord("hip", "zip"));
+//        System.out.println(startWord("hip", "zig"));
+//        System.out.println(startWord("h", "z"));
+//        System.out.println(startWord("hippo", "xippo"));
+//        System.out.println(startWord("hippo", "xyz"));
+//        System.out.println(startWord("hippo", "hip"));
+//        System.out.println(startWord("kitten", "cit"));
+//        System.out.println(startWord("kit", "cit"));
+//        System.out.println("============");
+
+
 
 
     }
@@ -424,7 +643,7 @@ public class CodingBatStrings {
      */
 
         if (index < 0 || index > (str.length() - 2)) {
-            return str.substring(0,2);
+            return str.substring(0, 2);
         } else {
             return str.substring(index, index + 2);
         }
@@ -441,8 +660,8 @@ public class CodingBatStrings {
     middleThree("solving") → "lvi"
      */
 
-        if (str.length() %2 != 0 && str.length() > 2) { // %2 == 0 means even number (no remainder)
-            return str.substring(str.length()/2-1,str.length()/2+2);
+        if (str.length() % 2 != 0 && str.length() > 2) { // %2 == 0 means even number (no remainder)
+            return str.substring(str.length() / 2 - 1, str.length() / 2 + 2);
         } else {
             return "String is even number";
         }
@@ -463,10 +682,10 @@ public class CodingBatStrings {
         if ((str.length() < 3)) {
             return false;
 
-        } else if (str.length() == 3 && !(str.substring(0,1).equals("b"))) {
+        } else if (str.length() == 3 && !(str.substring(0, 1).equals("b"))) {
             return false;
 
-        } else if (str.substring(0,3).equals("bad") || str.substring(1,4).equals("bad")) {
+        } else if (str.substring(0, 3).equals("bad") || str.substring(1, 4).equals("bad")) {
             return true;
 
         } else {
@@ -492,7 +711,7 @@ public class CodingBatStrings {
             return (str + "@");
 
         } else {
-            return (str.substring(0,2));
+            return (str.substring(0, 2));
         }
     }
 
@@ -509,13 +728,13 @@ public class CodingBatStrings {
             return "@@";
 
         } else if (a.length() == 0) {
-            return ("@" + b.substring(b.length()-1,b.length()));
+            return ("@" + b.substring(b.length() - 1, b.length()));
 
         } else if (b.length() == 0) {
-            return (a.substring(0,1) + "@");
+            return (a.substring(0, 1) + "@");
 
         } else {
-            return (a.substring(0,1) + b.substring(b.length()-1,b.length()));
+            return (a.substring(0, 1) + b.substring(b.length() - 1, b.length()));
         }
     }
 
@@ -536,10 +755,10 @@ public class CodingBatStrings {
         } else if (b.length() == 0) {
             return a;
 
-        } else if (a.substring(a.length()-1,a.length()).equals(b.substring(0,1))) {
-            return a + b.substring(1,b.length());
+        } else if (a.substring(a.length() - 1, a.length()).equals(b.substring(0, 1))) {
+            return a + b.substring(1, b.length());
 
-        } else  {
+        } else {
             return a + b;
         }
 
@@ -556,13 +775,161 @@ public class CodingBatStrings {
      */
 
         if (str.length() >= 2) {
-            return str.substring(0,str.length()-2)
-                    + str.substring(str.length()-1, str.length())
-                    + str.substring(str.length()-2,str.length()-1);
+            return str.substring(0, str.length() - 2)
+                    + str.substring(str.length() - 1, str.length())
+                    + str.substring(str.length() - 2, str.length() - 1);
 
         } else {
             return str;
         }
     }
+
+    public static String seeColor(String str) {
+    /*
+    Given a string, if the string begins with "red" or "blue" return that color string,
+    otherwise return the empty string.
+
+    seeColor("redxx") → "red"
+    seeColor("xxred") → ""
+    seeColor("blueTimes") → "blue"
+     */
+
+        if (str.length() < 3) {
+            return "";
+        } else if (str.substring(0, 3).equals("red")) {
+            return "red";
+        } else if (str.length() >= 4 && str.substring(0, 4).equals("blue")) {
+            return "blue";
+        } else {
+            return "";
+        }
+    }
+
+    public static boolean frontAgain(String str) {
+    /*
+    Given a string, return true if the first 2 chars in the string also appear at the end of the string, such as with "edited".
+
+    frontAgain("edited") → true
+    frontAgain("edit") → false
+    frontAgain("ed") → true
+     */
+
+        if (str.length() <= 1) {
+            return false;
+        } else if (str.substring(0, 2).equals(str.substring(str.length() - 2, str.length()))) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static String minCat(String a, String b) {
+    /*
+    Given two strings, append them together (known as "concatenation") and return the result.
+    However, if the strings are different lengths, omit chars from the longer string
+    so it is the same length as the shorter string. So "Hello" and "Hi" yield "loHi". The strings may be any length.
+
+    minCat("Hello", "Hi") → "loHi"
+    minCat("Hello", "java") → "ellojava"
+    minCat("java", "Hello") → "javaello"
+     */
+        if ((a.length() != b.length())
+                && (a.length() < b.length())) {
+            return a + b.substring(b.length() - a.length(), b.length());
+
+        } else if ((a.length() != b.length())
+                && (a.length() > b.length())) {
+            return a.substring(a.length() - b.length(), a.length()) + b;
+
+        } else {
+            return "";
+        }
+
+
+    }
+
+    public static String extraFront(String str) {
+    /*
+    Given a string, return a new string made of 3 copies of the first 2 chars of the original string.
+    The string may be any length. If there are fewer than 2 chars, use whatever is there.
+
+    extraFront("Hello") → "HeHeHe"
+    extraFront("ab") → "ababab"
+    extraFront("H") → "HHH"
+     */
+        if (str.length() < 2) {
+            return str + str + str;
+        } else {
+            return str.substring(0, 2) + str.substring(0, 2) + str.substring(0, 2);
+        }
+    }
+
+    public static String without2(String str) {
+    /*
+    Given a string, if a length 2 substring appears at both its beginning and end,
+    return a string without the substring at the beginning, so "HelloHe" yields "lloHe".
+    The substring may overlap with itself, so "Hi" yields "". Otherwise, return the original string unchanged.
+
+    without2("HelloHe") → "lloHe"
+    without2("HelloHi") → "HelloHi"
+    without2("Hi") → ""
+     */
+
+        if (str.length() < 2) {
+            return str;
+
+        } else if (str.substring(0, 2).equals(str.substring(str.length() - 2, str.length()))) {
+            return str.substring(2, str.length());
+
+        } else {
+            return str;
+        }
+    }
+
+    public static String deFront(String str) {
+
+    /*
+    Given a string, return a version without the first 2 chars.
+    Except keep the first char if it is 'a' and keep the second char if it is 'b'.
+    The string may be any length. Harder than it looks.
+
+    deFront("Hello") → "llo"
+    deFront("java") → "va"
+    deFront("away") → "aay"
+     */
+
+        if (str.substring(0, 1).equals("a") && !(str.substring(1, 2).equals("b"))) {
+        //case 1: firstchar a and secondchar not b
+            return "a" + str.substring(2, str.length());
+
+
+        } else if (str.substring(0, 1).equals("a") && str.substring(1, 2).equals("b")) {
+        //case 2: firstchar a and secondchar b
+            return str;
+
+        } else if (!(str.substring(0, 1).equals("a")) && str.substring(1, 2).equals("b")) {
+        //case 3: firstchar not a and secondchar b
+            return "b" + str.substring(2, str.length());
+
+        } else {
+        //case 4: firstchar not a and secondchar not b
+            return str.substring(2, str.length());
+        }
+    }
+
+// TODO:
+//    public static String startWord(String str, String word) {
+//    /*
+//    Given a string and a second "word" string, we'll say that the word matches the string if it appears
+//    at the front of the string, except its first char does not need to match exactly.
+//    On a match, return the front of the string, or otherwise return the empty string.
+//    So, so with the string "hippo" the word "hi" returns "hi" and "xip" returns "hip". The word will be at least length 1.
+//
+//    startWord("hippo", "hi") → "hi"
+//    startWord("hippo", "xip") → "hip"
+//    startWord("hippo", "i") → "h"
+//     */
+//        return str;
+//    }
 
 }
