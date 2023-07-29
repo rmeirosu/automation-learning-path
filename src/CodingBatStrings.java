@@ -373,28 +373,56 @@ public class CodingBatStrings {
         System.out.println(deFront("zzz"));
         System.out.println("============");
 
+        // startWord
+        System.out.println("CodingBat String-1 exercise: startWord");
+        System.out.println(startWord("hippo", "hi"));
+        System.out.println(startWord("hippo", "xip"));
+        System.out.println(startWord("hippo", "i"));
+        System.out.println(startWord("hippo", "ix"));
+        System.out.println(startWord("h", "ix"));
+        System.out.println(startWord("", "i"));
+        System.out.println(startWord("hip", "zi"));
+        System.out.println(startWord("hip", "zip"));
+        System.out.println(startWord("hip", "zig"));
+        System.out.println(startWord("h", "z"));
+        System.out.println(startWord("hippo", "xippo"));
+        System.out.println(startWord("hippo", "xyz"));
+        System.out.println(startWord("hippo", "hip"));
+        System.out.println(startWord("kitten", "cit"));
+        System.out.println(startWord("kit", "cit"));
+        System.out.println("============");
 
-// TODO:
-//        // startWord
-//        System.out.println("CodingBat String-1 exercise: startWord");
-//        System.out.println(startWord("hippo", "hi"));
-//        System.out.println(startWord("hippo", "xip"));
-//        System.out.println(startWord("hippo", "i"));
-//        System.out.println(startWord("hippo", "ix"));
-//        System.out.println(startWord("h", "ix"));
-//        System.out.println(startWord("", "i"));
-//        System.out.println(startWord("hip", "zi"));
-//        System.out.println(startWord("hip", "zip"));
-//        System.out.println(startWord("hip", "zig"));
-//        System.out.println(startWord("h", "z"));
-//        System.out.println(startWord("hippo", "xippo"));
-//        System.out.println(startWord("hippo", "xyz"));
-//        System.out.println(startWord("hippo", "hip"));
-//        System.out.println(startWord("kitten", "cit"));
-//        System.out.println(startWord("kit", "cit"));
-//        System.out.println("============");
+        //withoutX
+        System.out.println("CodingBat String-1 exercise: withoutX");
+        System.out.println(withoutX("xHix"));
+        System.out.println(withoutX("xHi"));
+        System.out.println(withoutX("Hxix"));
+        System.out.println(withoutX("Hi"));
+        System.out.println(withoutX("xxHi"));
+        System.out.println(withoutX("Hix"));
+        System.out.println(withoutX("xaxbx"));
+        System.out.println(withoutX("xx"));
+        System.out.println(withoutX("x"));
+        System.out.println(withoutX(""));
+        System.out.println(withoutX("Hello"));
+        System.out.println(withoutX("Hexllo"));
+        System.out.println("============");
 
-
+        //withoutX2
+        System.out.println("CodingBat String-1 exercise: withoutX2");
+        System.out.println(withoutX2("xHi"));
+        System.out.println(withoutX2("Hxi"));
+        System.out.println(withoutX2("Hi"));
+        System.out.println(withoutX2("xxHi"));
+        System.out.println(withoutX2("Hix"));
+        System.out.println(withoutX2("xaxb"));
+        System.out.println(withoutX2("xx"));
+        System.out.println(withoutX2("x"));
+        System.out.println(withoutX2(""));
+        System.out.println(withoutX2("Hello"));
+        System.out.println(withoutX2("Hexllo"));
+        System.out.println(withoutX2("xHxllo"));
+        System.out.println("============");
 
 
     }
@@ -899,37 +927,136 @@ public class CodingBatStrings {
      */
 
         if (str.substring(0, 1).equals("a") && !(str.substring(1, 2).equals("b"))) {
-        //case 1: firstchar a and secondchar not b
+            //case 1: firstchar a and secondchar not b
             return "a" + str.substring(2, str.length());
 
 
         } else if (str.substring(0, 1).equals("a") && str.substring(1, 2).equals("b")) {
-        //case 2: firstchar a and secondchar b
+            //case 2: firstchar a and secondchar b
             return str;
 
         } else if (!(str.substring(0, 1).equals("a")) && str.substring(1, 2).equals("b")) {
-        //case 3: firstchar not a and secondchar b
+            //case 3: firstchar not a and secondchar b
             return "b" + str.substring(2, str.length());
 
         } else {
-        //case 4: firstchar not a and secondchar not b
+            //case 4: firstchar not a and secondchar not b
             return str.substring(2, str.length());
         }
     }
 
-// TODO:
-//    public static String startWord(String str, String word) {
-//    /*
-//    Given a string and a second "word" string, we'll say that the word matches the string if it appears
-//    at the front of the string, except its first char does not need to match exactly.
-//    On a match, return the front of the string, or otherwise return the empty string.
-//    So, so with the string "hippo" the word "hi" returns "hi" and "xip" returns "hip". The word will be at least length 1.
-//
-//    startWord("hippo", "hi") → "hi"
-//    startWord("hippo", "xip") → "hip"
-//    startWord("hippo", "i") → "h"
-//     */
-//        return str;
-//    }
+    public static String startWord(String str, String word) {
+    /*
+    Given a string and a second "word" string, we'll say that the word matches the string if it appears
+    at the front of the string, except its first char does not need to match exactly.
+    On a match, return the front of the string, or otherwise return the empty string.
+    So, so with the string "hippo" the word "hi" returns "hi" and "xip" returns "hip". The word will be at least length 1.
+
+    startWord("hippo", "hi") → "hi"
+    startWord("hippo", "xip") → "hip"
+    startWord("hippo", "i") → "h"
+     */
+        if (str.length() >= word.length()) {
+            if (word.substring(1, word.length()).equals(str.substring(1, word.length()))) {
+                return str.substring(0, word.length());
+            } else {
+                return "";
+            }
+
+        } else {
+            return "";
+        }
+    }
+
+    public static String withoutX(String str) {
+
+    /*
+    Given a string, if the first or last chars are 'x', return the string without those 'x' chars,
+    and otherwise return the string unchanged.
+
+    withoutX("xHix") → "Hi"
+    withoutX("xHi") → "Hi"
+    withoutX("Hxix") → "Hxi"
+     */
+
+
+        if (str.length() > 0) {
+            //if the first or last chars are 'x'
+            if (str.substring(0, 1).equals("x") && str.substring(str.length() - 1, str.length()).equals("x")) {
+
+                if (str.length() > 1) {//return without start x and last x
+                    return str.substring(1, str.length() - 1);
+
+                } else {
+                    return "";
+                }
+
+                //if first char is 'x'
+            } else if (str.substring(0, 1).equals("x")) {
+
+                if (str.length() > 1) {
+                    //return without first x
+                    return str.substring(1, str.length());
+
+                } else {
+                    return "";
+                }
+
+                //if last char is 'x'
+            } else if (str.substring(str.length() - 1, str.length()).equals("x")) {
+                if (str.length() > 1) {
+                    //return without last x
+                    return str.substring(0, str.length() - 1);
+                } else {
+                    return "";
+                }
+
+            } else {
+                return str;
+            }
+
+        } else {
+            return str;
+        }
+    }
+
+    public static String withoutX2(String str) {
+    /*
+    Given a string, if one or both of the first 2 chars is 'x', return the string without those 'x' chars,
+    and otherwise return the string unchanged. This is a little harder than it looks.
+
+    withoutX2("xHi") → "Hi"
+    withoutX2("Hxi") → "Hi"
+    withoutX2("Hi") → "Hi"
+     */
+        if (str.length() > 0) {
+
+            //if string is length 1 and first char is x
+            if ((str.length() == 1) && (str.equals("x"))) {
+                return "";
+
+            } else if (str.substring(0, 2).equals("xx") && str.length() > 1) {
+                //if one or both of the first 2 is "x" return the string without those "x" chars
+                return str.substring(2, str.length());
+
+            } else if (str.substring(0, 1).equals("x") && str.length() > 1) {
+                //if first char is "x" return without first char
+                return str.substring(1, str.length());
+
+            } else if (str.substring(1, 2).equals("x") && str.length() > 1) {
+                //if second char is "x" return without second char
+                return str.substring(0, 1) + str.substring(2, str.length());
+
+            } else {
+                return str;
+            }
+
+        } else {
+            return "";
+        }
+    }
+
+
+
 
 }
