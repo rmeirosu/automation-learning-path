@@ -1,8 +1,8 @@
 public class ClassesIntro {
     public static void main(String[] args) {
 
-        Car myCar = new Car("Ford");
-        Car anotherCar = new Car("BMW");
+        Masina myCar = new Masina("Ford");
+        Masina anotherCar = new Masina("BMW");
 
         myCar.accelerate();
         myCar.accelerate();
@@ -22,13 +22,13 @@ public class ClassesIntro {
     }
 }
 
-class Car {
+class Masina {
 //Classes can have different type of members
 
     private int speed = 0;
     private String name;
 
-    public Car(String carName) {
+    public Masina(String carName) {
         /*
         This is a constructor.
         Our cars don't have names yet, we can give our Car class a name and provide it when we create each instance.
