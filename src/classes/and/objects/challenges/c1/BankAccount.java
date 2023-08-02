@@ -30,6 +30,30 @@ public class BankAccount {
     private String customerEmail;
     private String customerPhone;
 
+    public BankAccount() { // no-args constructor chain calling the arguments constructor
+        this("001", 123.45,
+                "Default name", "default email",
+                "Default phone");
+        System.out.println("Empty constructor called");
+    }
+
+    public BankAccount(String accountNumber, double accountBalance, String customerName, String customerEmail,
+                       String customerPhone) { // constructor with parameters
+        System.out.println("Account constructor with parameters called");
+        this.accountNumber = accountNumber;
+        this.accountBalance = accountBalance;
+        this.customerName = customerName;
+        this.customerEmail = customerEmail;
+        this.customerPhone = customerPhone;
+    }
+
+    public BankAccount(String customerName, String customerEmail, String customerPhone) { // constructor with partial params
+        this("9999",155.5, customerName, customerEmail, customerPhone);
+//        this.customerName = customerName;
+//        this.customerEmail = customerEmail;
+//        this.customerPhone = customerPhone;
+    }
+
     // 3. Create getters and setters for each field.
     public String getAccountNumber() {
         return accountNumber;

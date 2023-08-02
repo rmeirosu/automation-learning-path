@@ -28,13 +28,31 @@ public class Main {
 
     public static void main(String[] args) {
 
-        BankAccount accountOne = new BankAccount();
+//        BankAccount accountOne = new BankAccount("001", 5205.50,
+//                "First Customer", "first.customer@email.com",
+//                "1234");
 
-        accountOne.setAccountNumber("001");
-        accountOne.setAccountBalance(5000.50);
-        accountOne.setCustomerName("First Customer");
-        accountOne.setCustomerEmail("first.customer@email.com");
-        accountOne.setCustomerPhone("1234");
+        BankAccount accountOne = new BankAccount();
+        BankAccount accountTwo = new BankAccount("Customer Two",
+                "customer2@email.com","222-222-2222");
+
+        System.out.println(accountOne.getAccountNumber());
+        System.out.println(accountOne.getAccountBalance());
+
+        System.out.println();
+        System.out.println("This is accountTwo: ");
+        System.out.println(accountTwo.getAccountNumber());
+        System.out.println(accountTwo.getAccountBalance());
+        System.out.println(accountTwo.getCustomerName());
+        System.out.println(accountTwo.getCustomerEmail());
+        System.out.println(accountTwo.getCustomerPhone());
+        System.out.println();
+
+//        accountOne.setAccountNumber("001");
+//        accountOne.setAccountBalance(5000.50);
+//        accountOne.setCustomerName("First Customer");
+//        accountOne.setCustomerEmail("first.customer@email.com");
+//        accountOne.setCustomerPhone("1234");
 
         System.out.println("Hello, " + accountOne.getCustomerName());
         System.out.println("Your Account Number is: " + accountOne.getAccountNumber());
@@ -48,6 +66,8 @@ public class Main {
         System.out.println();
         accountOne.withdrawFunds(9293.54);
         System.out.println();
+
+        //////////////////////////////////////////////////////////////////////////////////
 
         // Simple Calculator challenge
         System.out.println("===Simple Calculator Challenge===");
