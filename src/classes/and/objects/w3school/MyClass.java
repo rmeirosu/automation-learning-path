@@ -1,7 +1,6 @@
-package classes.and.objects.w3school_classes_objects;
+package classes.and.objects.w3school;
 
 // EXERCISE 7: Fill in the missing parts to import the java.util.Scanner class from the Java API:
-import java.util.Scanner;
 
 // EXERCISE 1: Create a class called MyClass.
 
