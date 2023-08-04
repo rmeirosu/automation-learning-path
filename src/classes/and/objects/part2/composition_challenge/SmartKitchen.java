@@ -1,4 +1,4 @@
-package classes.and.objects.part2.computer_factory.composition_challenge;
+package classes.and.objects.part2.composition_challenge;
 
 public class SmartKitchen {
 
