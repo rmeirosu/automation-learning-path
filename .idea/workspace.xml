@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4d05eb2-190e-4ef1-b1b3-c70317f6b36e" name="Changes" comment="CodingBat website String-1 exercises.">
-      <change afterPath="$PROJECT_DIR$/src/classes/and/objects/part2/encapsulation/EnhancedPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/and/objects/part2/encapsulation/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/and/objects/part2/encapsulation/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/and/objects/part2/encapsulation_challenge/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/and/objects/part2/encapsulation_challenge/Printer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a4d05eb2-190e-4ef1-b1b3-c70317f6b36e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/classes/and/objects/part2/polymorphism/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/and/objects/part2/polymorphism/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutomationLearningPath.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AutomationLearningPath.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/and/objects/part2/computer_factory/composition_challenge/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/and/objects/part2/composition_challenge/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/and/objects/part2/computer_factory/composition_challenge/SmartKitchen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/and/objects/part2/composition_challenge/SmartKitchen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
         <option value="Record" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -70,20 +63,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.classes.and.objects.part2.encapsulation_challenge.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="classes.and.objects.w3school.Main" />
-      <module name="AutomationLearningPath" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="classes.and.objects.w3school.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.classes.and.objects.part2.polymorphism.Main">
     <configuration name="classes.and.objects.part2.composition_challenge.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="classes.and.objects.part2.composition_challenge.Main" />
       <module name="AutomationLearningPath" />
@@ -136,13 +116,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="classes.and.objects.part2.polymorphism.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="classes.and.objects.part2.polymorphism.Main" />
+      <module name="AutomationLearningPath" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="classes.and.objects.part2.polymorphism.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.classes.and.objects.part2.polymorphism.Main" />
         <item itemvalue="Application.classes.and.objects.part2.encapsulation_challenge.Main" />
         <item itemvalue="Application.classes.and.objects.part2.encapsulation.Main" />
         <item itemvalue="Application.classes.and.objects.part2.composition_challenge.Main" />
         <item itemvalue="Application.classes.and.objects.part2.computer_factory.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -400,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691144503486</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Added encapsulation challenge exercise.">
+      <created>1691149890947</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1691149890947</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -427,7 +427,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added W3 School Java Booleans course and exercises.&#10;Renamed Java Math." />
     <MESSAGE value="Finished Udemy Java Crash Course section 5." />
     <MESSAGE value="Added W3 School Java Break and Continue course and exercises." />
     <MESSAGE value="Added W3 School Java While course and exercises." />
@@ -452,7 +451,8 @@
     <MESSAGE value="Added W3School exercises." />
     <MESSAGE value="Added W3 School Java Classes course exercises up to Encapsulation." />
     <MESSAGE value="Added OOP Part 2 section up until Composition coding exercise." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added OOP Part 2 section up until Composition coding exercise." />
+    <MESSAGE value="Added encapsulation challenge exercise." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added encapsulation challenge exercise." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
