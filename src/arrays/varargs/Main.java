@@ -8,9 +8,18 @@ public class Main {
 
         String[] splitStrings = "Hello World again".split(" ");
         printText(splitStrings);
+
+        System.out.println("_".repeat(20));
+        printText("Hello", "World", "again");
+
+        System.out.println("_".repeat(20));
+        printText("Hello");
+
+        System.out.println("_".repeat(20));
+        printText();
     }
 
-    private static void printText(String[] textList) {
+    private static void printText(String... textList) {
 
         for (String t : textList) {
             System.out.println(t);
