@@ -254,168 +254,365 @@ public class CodingBatArrays {
 
         //no23
         System.out.println("CodingBat Array-1 exercise: no23");
-        newArray = new int[] {4, 5};
+        newArray = new int[]{4, 5};
         System.out.println(no23(newArray));
-        newArray = new int[] {4, 2};
+        newArray = new int[]{4, 2};
         System.out.println(no23(newArray));
-        newArray = new int[] {3, 5};
+        newArray = new int[]{3, 5};
         System.out.println(no23(newArray));
-        newArray = new int[] {1, 9};
+        newArray = new int[]{1, 9};
         System.out.println(no23(newArray));
-        newArray = new int[] {2, 9};
+        newArray = new int[]{2, 9};
         System.out.println(no23(newArray));
-        newArray = new int[] {1, 3};
+        newArray = new int[]{1, 3};
         System.out.println(no23(newArray));
-        newArray = new int[] {1, 1};
+        newArray = new int[]{1, 1};
         System.out.println(no23(newArray));
-        newArray = new int[] {2, 2};
+        newArray = new int[]{2, 2};
         System.out.println(no23(newArray));
-        newArray = new int[] {3, 3};
+        newArray = new int[]{3, 3};
         System.out.println(no23(newArray));
-        newArray = new int[] {7, 8};
+        newArray = new int[]{7, 8};
         System.out.println(no23(newArray));
-        newArray = new int[] {8, 7};
+        newArray = new int[]{8, 7};
         System.out.println(no23(newArray));
         System.out.println("============");
 
 
         //makeLast
         System.out.println("CodingBat Array-1 exercise: makeLast");
-        newArray = new int[] {4, 5, 6};
+        newArray = new int[]{4, 5, 6};
         makeLast(newArray);
-        newArray = new int[] {1, 2};
+        newArray = new int[]{1, 2};
         makeLast(newArray);
-        newArray = new int[] {3};
+        newArray = new int[]{3};
         makeLast(newArray);
-        newArray = new int[] {0};
+        newArray = new int[]{0};
         makeLast(newArray);
-        newArray = new int[] {7, 7, 7};
+        newArray = new int[]{7, 7, 7};
         makeLast(newArray);
-        newArray = new int[] {3, 1, 4};
+        newArray = new int[]{3, 1, 4};
         makeLast(newArray);
-        newArray = new int[] {1, 2, 3, 4};
+        newArray = new int[]{1, 2, 3, 4};
         makeLast(newArray);
-        newArray = new int[] {1, 2, 3, 0};
+        newArray = new int[]{1, 2, 3, 0};
         makeLast(newArray);
-        newArray = new int[] {2, 4};
+        newArray = new int[]{2, 4};
         makeLast(newArray);
         System.out.println("============");
 
 
         //double23
         System.out.println("CodingBat Array-1 exercise: double23");
-        newArray = new int[] {2, 2};
+        newArray = new int[]{2, 2};
         System.out.println(double23(newArray));
-        newArray = new int[] {3, 3};
+        newArray = new int[]{3, 3};
         System.out.println(double23(newArray));
-        newArray = new int[] {2, 3};
+        newArray = new int[]{2, 3};
         System.out.println(double23(newArray));
-        newArray = new int[] {3, 2};
+        newArray = new int[]{3, 2};
         System.out.println(double23(newArray));
-        newArray = new int[] {4, 5};
+        newArray = new int[]{4, 5};
         System.out.println(double23(newArray));
-        newArray = new int[] {2};
+        newArray = new int[]{2};
         System.out.println(double23(newArray));
-        newArray = new int[] {3};
+        newArray = new int[]{3};
         System.out.println(double23(newArray));
-        newArray = new int[] {};
+        newArray = new int[]{};
         System.out.println(double23(newArray));
-        newArray = new int[] {3, 4};
+        newArray = new int[]{3, 4};
         System.out.println(double23(newArray));
         System.out.println("============");
 
 
         //fix23
         System.out.println("CodingBat Array-1 exercise: fix23");
-        newArray = new int[] {1, 2, 3};
+        newArray = new int[]{1, 2, 3};
         fix23(newArray);
-        newArray = new int[] {2, 3, 5};
+        newArray = new int[]{2, 3, 5};
         fix23(newArray);
-        newArray = new int[] {1, 2, 1};
+        newArray = new int[]{1, 2, 1};
         fix23(newArray);
-        newArray = new int[] {3, 2, 1};
+        newArray = new int[]{3, 2, 1};
         fix23(newArray);
-        newArray = new int[] {2, 2, 3};
+        newArray = new int[]{2, 2, 3};
         fix23(newArray);
-        newArray = new int[] {2, 3, 3};
+        newArray = new int[]{2, 3, 3};
         fix23(newArray);
         System.out.println("============");
 
 
         //start1
         System.out.println("CodingBat Array-1 exercise: start1");
-        a = new int[] {1, 2, 3};
-        b = new int[] {1, 3};
+        a = new int[]{1, 2, 3};
+        b = new int[]{1, 3};
         start1(a, b);
-        a = new int[] {7, 2, 3};
-        b = new int[] {1};
+        a = new int[]{7, 2, 3};
+        b = new int[]{1};
         start1(a, b);
-        a = new int[] {1, 2};
-        b = new int[] {};
+        a = new int[]{1, 2};
+        b = new int[]{};
         start1(a, b);
-        a = new int[] {};
-        b = new int[] {1, 2};
+        a = new int[]{};
+        b = new int[]{1, 2};
         start1(a, b);
-        a = new int[] {7};
-        b = new int[] {};
+        a = new int[]{7};
+        b = new int[]{};
         start1(a, b);
-        a = new int[] {7};
-        b = new int[] {1};
+        a = new int[]{7};
+        b = new int[]{1};
         start1(a, b);
-        a = new int[] {1};
-        b = new int[] {1};
+        a = new int[]{1};
+        b = new int[]{1};
         start1(a, b);
-        a = new int[] {7};
-        b = new int[] {8};
+        a = new int[]{7};
+        b = new int[]{8};
         start1(a, b);
-        a = new int[] {};
-        b = new int[] {};
+        a = new int[]{};
+        b = new int[]{};
         start1(a, b);
-        a = new int[] {1, 3};
-        b = new int[] {1};
+        a = new int[]{1, 3};
+        b = new int[]{1};
         start1(a, b);
         System.out.println("============");
 
 
         //biggerTwo
         System.out.println("CodingBat Array-1 exercise: biggerTwo");
-        a = new int[] {1, 2};
-        b = new int[] {3, 4};
+        a = new int[]{1, 2};
+        b = new int[]{3, 4};
         biggerTwo(a, b);
-        a = new int[] {3, 4};
-        b = new int[] {1, 2};
+        a = new int[]{3, 4};
+        b = new int[]{1, 2};
         biggerTwo(a, b);
-        a = new int[] {1, 1};
-        b = new int[] {1, 2};
+        a = new int[]{1, 1};
+        b = new int[]{1, 2};
         biggerTwo(a, b);
-        a = new int[] {2, 1};
-        b = new int[] {1, 1};
+        a = new int[]{2, 1};
+        b = new int[]{1, 1};
         biggerTwo(a, b);
-        a = new int[] {2, 2};
-        b = new int[] {1, 3};
+        a = new int[]{2, 2};
+        b = new int[]{1, 3};
         biggerTwo(a, b);
-        a = new int[] {1, 3};
-        b = new int[] {2, 2};
+        a = new int[]{1, 3};
+        b = new int[]{2, 2};
         biggerTwo(a, b);
-        a = new int[] {6, 7};
-        b = new int[] {3, 1};
+        a = new int[]{6, 7};
+        b = new int[]{3, 1};
         biggerTwo(a, b);
         System.out.println("============");
 
 
+        //makeMiddle
+        System.out.println("CodingBat Array-1 exercise: makeMiddle");
+        newArray = new int[]{1, 2, 3, 4};
+        makeMiddle(newArray);
+        newArray = new int[]{7, 1, 2, 3, 4, 9};
+        makeMiddle(newArray);
+        newArray = new int[]{1, 2};
+        makeMiddle(newArray);
+        newArray = new int[]{5, 2, 4, 7};
+        makeMiddle(newArray);
+        newArray = new int[]{9, 0, 4, 3, 9, 1};
+        makeMiddle(newArray);
+        System.out.println("============");
 
 
+        //plusTwo
+        System.out.println("CodingBat Array-1 exercise: plusTwo");
+        a = new int[]{1, 2};
+        b = new int[]{3, 4};
+        plusTwo(a, b);
+        a = new int[]{4, 4};
+        b = new int[]{2, 2};
+        plusTwo(a, b);
+        a = new int[]{9, 2};
+        b = new int[]{3, 4};
+        plusTwo(a, b);
+        System.out.println("============");
 
 
+        //swapEnds
+        System.out.println("CodingBat Array-1 exercise: swapEnds");
+        newArray = new int[]{1, 2, 3, 4};
+        swapEnds(newArray);
+        newArray = new int[]{1, 2, 3};
+        swapEnds(newArray);
+        newArray = new int[]{8, 6, 7, 9, 5};
+        swapEnds(newArray);
+        newArray = new int[]{3, 1, 4, 1, 5, 9};
+        swapEnds(newArray);
+        newArray = new int[]{1, 2};
+        swapEnds(newArray);
+        newArray = new int[]{1};
+        swapEnds(newArray);
+        System.out.println("============");
 
 
+        //midThree
+        System.out.println("CodingBat Array-1 exercise: midThree");
+        newArray = new int[]{1, 2, 3, 4, 5};
+        midThree(newArray);
+        newArray = new int[]{8, 6, 7, 5, 3, 0, 9};
+        midThree(newArray);
+        newArray = new int[]{1, 2, 3};
+        midThree(newArray);
+        System.out.println("============");
 
 
+        //maxTriple
+        System.out.println("CodingBat Array-1 exercise: maxTriple");
+        newArray = new int[]{1, 2, 3};
+        maxTriple(newArray);
+        newArray = new int[]{1, 5, 3};
+        maxTriple(newArray);
+        newArray = new int[]{5, 2, 3};
+        maxTriple(newArray);
+        newArray = new int[]{1, 2, 3, 1, 1};
+        maxTriple(newArray);
+        newArray = new int[]{1, 7, 3, 1, 5};
+        maxTriple(newArray);
+        newArray = new int[]{5, 1, 3, 7, 1};
+        maxTriple(newArray);
+        newArray = new int[]{5, 1, 7, 3, 7, 8, 1};
+        maxTriple(newArray);
+        newArray = new int[]{5, 1, 7, 9, 7, 8, 1};
+        maxTriple(newArray);
+        newArray = new int[]{5, 1, 7, 3, 7, 8, 9};
+        maxTriple(newArray);
+        newArray = new int[]{2, 2, 5, 1, 1};
+        maxTriple(newArray);
+        System.out.println("============");
 
 
+        //frontPiece
+        System.out.println("CodingBat Array-1 exercise: frontPiece");
+        newArray = new int[]{1, 2, 3};
+        System.out.println("frontPiece: " + Arrays.toString(frontPiece(newArray)));
+        newArray = new int[]{1, 2};
+        System.out.println("frontPiece: " + Arrays.toString(frontPiece(newArray)));
+        newArray = new int[]{1};
+        System.out.println("frontPiece: " + Arrays.toString(frontPiece(newArray)));
+        newArray = new int[]{};
+        System.out.println("frontPiece: " + Arrays.toString(frontPiece(newArray)));
+        newArray = new int[]{6, 5, 0};
+        System.out.println("frontPiece: " + Arrays.toString(frontPiece(newArray)));
+        newArray = new int[]{6, 5};
+        System.out.println("frontPiece: " + Arrays.toString(frontPiece(newArray)));
+        newArray = new int[]{3, 1, 4, 1, 5};
+        System.out.println("frontPiece: " + Arrays.toString(frontPiece(newArray)));
+        newArray = new int[]{6};
+        System.out.println("frontPiece: " + Arrays.toString(frontPiece(newArray)));
+        System.out.println("============");
 
 
+        //unlucky1
+        System.out.println("CodingBat Array-1 exercise: unlucky1");
+        newArray = new int[]{1, 3, 4, 5};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{2, 1, 3, 4, 5};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{1, 1, 1};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{1, 3, 1};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{1, 1, 3};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{1, 2, 3};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{3, 3, 3};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{1, 3};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{1, 4};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{1};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{1, 1, 1, 3, 1};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{1, 1, 3, 1, 1};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{1, 1, 1, 1, 3};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{1, 4, 1, 5};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{1, 1, 2, 3};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{2, 3, 2, 1};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{2, 3, 1, 3};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        newArray = new int[]{1, 2, 3, 4, 1, 3};
+        System.out.println("unlucky1: " + unlucky1(newArray));
+        System.out.println("============");
 
+        //make2
+        System.out.println("CodingBat Array-1 exercise: make2");
+        a = new int[] {4, 5};
+        b = new int[] {1, 2, 3};
+        make2(a, b);
+        a = new int[] {4};
+        b = new int[] {1, 2, 3};
+        make2(a, b);
+        a = new int[] {};
+        b = new int[] {1, 2};
+        make2(a, b);
+        a = new int[] {1, 2};
+        b = new int[] {};
+        make2(a, b);
+        a = new int[] {3};
+        b = new int[] {1, 2, 3};
+        make2(a, b);
+        a = new int[] {3};
+        b = new int[] {1};
+        make2(a, b);
+        a = new int[] {3, 1, 4};
+        b = new int[] {};
+        make2(a, b);
+        a = new int[] {1};
+        b = new int[] {1};
+        make2(a, b);
+        a = new int[] {1, 2, 3};
+        b = new int[] {7, 8};
+        make2(a, b);
+        a = new int[] {7, 8};
+        b = new int[] {1, 2, 3};
+        make2(a, b);
+        a = new int[] {7};
+        b = new int[] {1, 2, 3};
+        make2(a, b);
+        a = new int[] {5, 4};
+        b = new int[] {2, 3, 7};
+        make2(a, b);
+        System.out.println("============");
+
+
+        //front11
+        System.out.println("CodingBat Array-1 exercise: front11");
+        a = new int[] {1, 2, 3};
+        b = new int[] {7, 9, 8};
+        System.out.println("front11: " + Arrays.toString(front11(a, b)));
+        a = new int[] {1};
+        b = new int[] {2};
+        System.out.println("front11: " + Arrays.toString(front11(a, b)));
+        a = new int[] {1, 7};
+        b = new int[] {};
+        System.out.println("front11: " + Arrays.toString(front11(a, b)));
+        a = new int[] {};
+        b = new int[] {2, 8};
+        System.out.println("front11: " + Arrays.toString(front11(a, b)));
+        a = new int[] {};
+        b = new int[] {};
+        System.out.println("front11: " + Arrays.toString(front11(a, b)));
+        a = new int[] {3};
+        b = new int[] {1, 4, 1, 9};
+        System.out.println("front11: " + Arrays.toString(front11(a, b)));
+        a = new int[] {1, 4, 1, 9};
+        b = new int[] {};
+        System.out.println("front11: " + Arrays.toString(front11(a, b)));
+        System.out.println("============");
     }
 
 
@@ -641,15 +838,15 @@ public class CodingBatArrays {
     }
 
     public static int[] makeLast(int[] nums) {
-    /**
-     * Given an int array, return a new array with double the length where its last element
-     * is the same as the original array, and all the other elements are 0.
-     * The original array will be length 1 or more. Note: by default, a new int array contains all 0's.
-     *
-     * makeLast([4, 5, 6]) → [0, 0, 0, 0, 0, 6]
-     * makeLast([1, 2]) → [0, 0, 0, 2]
-     * makeLast([3]) → [0, 3]
-     */
+        /**
+         * Given an int array, return a new array with double the length where its last element
+         * is the same as the original array, and all the other elements are 0.
+         * The original array will be length 1 or more. Note: by default, a new int array contains all 0's.
+         *
+         * makeLast([4, 5, 6]) → [0, 0, 0, 0, 0, 6]
+         * makeLast([1, 2]) → [0, 0, 0, 2]
+         * makeLast([3]) → [0, 3]
+         */
         int[] doubleLength = new int[2 * nums.length];
         doubleLength[doubleLength.length - 1] = nums[nums.length - 1];
         System.out.println("makeLast = " + Arrays.toString(doubleLength));
@@ -658,13 +855,13 @@ public class CodingBatArrays {
     }
 
     public static boolean double23(int[] nums) {
-    /**
-     * Given an int array, return true if the array contains 2 twice, or 3 twice. The array will be length 0, 1, or 2.
-     *
-     * double23([2, 2]) → true
-     * double23([3, 3]) → true
-     * double23([2, 3]) → false
-     */
+        /**
+         * Given an int array, return true if the array contains 2 twice, or 3 twice. The array will be length 0, 1, or 2.
+         *
+         * double23([2, 2]) → true
+         * double23([3, 3]) → true
+         * double23([2, 3]) → false
+         */
         if (nums.length < 2) {
             return false;
 
@@ -674,21 +871,21 @@ public class CodingBatArrays {
         } else if (nums[0] == 3 && nums[1] == 3) {
             return true;
 
-        } return false;
-
+        }
+        return false;
 
 
     }
 
     public static int[] fix23(int[] nums) {
-    /**
-     * Given an int array length 3, if there is a 2 in the array immediately followed by a 3,
-     * set the 3 element to 0. Return the changed array.
-     *
-     * fix23([1, 2, 3]) → [1, 2, 0]
-     * fix23([2, 3, 5]) → [2, 0, 5]
-     * fix23([1, 2, 1]) → [1, 2, 1]
-     */
+        /**
+         * Given an int array length 3, if there is a 2 in the array immediately followed by a 3,
+         * set the 3 element to 0. Return the changed array.
+         *
+         * fix23([1, 2, 3]) → [1, 2, 0]
+         * fix23([2, 3, 5]) → [2, 0, 5]
+         * fix23([1, 2, 1]) → [1, 2, 1]
+         */
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == 2 && nums[i + 1] == 3) {
                 nums[i + 1] = 0;
@@ -699,13 +896,13 @@ public class CodingBatArrays {
     }
 
     public static int start1(int[] a, int[] b) {
-    /**
-     * Start with 2 int arrays, a and b, of any length. Return how many of the arrays have 1 as their first element.
-     *
-     * start1([1, 2, 3], [1, 3]) → 2
-     * start1([7, 2, 3], [1]) → 1
-     * start1([1, 2], []) → 1
-     */
+        /**
+         * Start with 2 int arrays, a and b, of any length. Return how many of the arrays have 1 as their first element.
+         *
+         * start1([1, 2, 3], [1, 3]) → 2
+         * start1([7, 2, 3], [1]) → 1
+         * start1([1, 2], []) → 1
+         */
 
         int count = 0;
         for (int i = 0; a.length > 0 || b.length > 0; i++) {
@@ -716,21 +913,22 @@ public class CodingBatArrays {
                 }
             } else if (b.length > 0 && b[0] == 1) {
                 count += 1;
-            } break;
+            }
+            break;
         }
         System.out.println("Arrays having 1 as first element: " + count);
         return count;
     }
 
     public static int[] biggerTwo(int[] a, int[] b) {
-    /**
-     * Start with 2 int arrays, a and b, each length 2. Consider the sum of the values in each array.
-     * Return the array which has the largest sum. In event of a tie, return a.
-     *
-     * biggerTwo([1, 2], [3, 4]) → [3, 4]
-     * biggerTwo([3, 4], [1, 2]) → [3, 4]
-     * biggerTwo([1, 1], [1, 2]) → [1, 2]
-     */
+        /**
+         * Start with 2 int arrays, a and b, each length 2. Consider the sum of the values in each array.
+         * Return the array which has the largest sum. In event of a tie, return a.
+         *
+         * biggerTwo([1, 2], [3, 4]) → [3, 4]
+         * biggerTwo([3, 4], [1, 2]) → [3, 4]
+         * biggerTwo([1, 1], [1, 2]) → [1, 2]
+         */
         int sumA = a[0] + a[1];
         int sumB = b[0] + b[1];
 
@@ -745,6 +943,176 @@ public class CodingBatArrays {
         return a;
     }
 
+    public static int[] makeMiddle(int[] nums) {
+        /**Given an array of ints of even length, return a new array length 2 containing
+         * the middle two elements from the original array. The original array will be length 2 or more.
+         *
+         * makeMiddle([1, 2, 3, 4]) → [2, 3]
+         * makeMiddle([7, 1, 2, 3, 4, 9]) → [2, 3]
+         * makeMiddle([1, 2]) → [1, 2]
+         *
+         */
+        int[] middleTwo = new int[]{nums[(nums.length / 2) - 1], nums[nums.length / 2]};
+        System.out.println("makeMiddle: " + Arrays.toString(middleTwo));
+        return middleTwo;
+    }
+
+    public static int[] plusTwo(int[] a, int[] b) {
+        /**
+         * Given 2 int arrays, each length 2, return a new array length 4 containing all their elements.
+         *
+         *
+         * plusTwo([1, 2], [3, 4]) → [1, 2, 3, 4]
+         * plusTwo([4, 4], [2, 2]) → [4, 4, 2, 2]
+         * plusTwo([9, 2], [3, 4]) → [9, 2, 3, 4]
+         */
+        int[] newArray = new int[]{a[0], a[1], b[0], b[1]};
+        System.out.println(Arrays.toString(newArray));
+        return newArray;
+
+    }
+
+    public static int[] swapEnds(int[] nums) {
+        /**
+         *
+         Given an array of ints, swap the first and last elements in the array.
+         Return the modified array. The array length will be at least 1.
+
+         swapEnds([1, 2, 3, 4]) → [4, 2, 3, 1]
+         swapEnds([1, 2, 3]) → [3, 2, 1]
+         swapEnds([8, 6, 7, 9, 5]) → [5, 6, 7, 9, 8]
+         */
+        if (nums.length > 0) {
+            int first = nums[0];
+            int last = nums[nums.length - 1];
+
+            nums[0] = last;
+            nums[nums.length - 1] = first;
+
+            System.out.println("swapped: " + Arrays.toString(nums));
+            return nums;
+        }
+        return nums;
+    }
+
+    public static int[] midThree(int[] nums) {
+        /**
+         *
+         Given an array of ints of odd length, return a new array length 3
+         containing the elements from the middle of the array. The array length will be at least 3.
+
+         midThree([1, 2, 3, 4, 5]) → [2, 3, 4]
+         midThree([8, 6, 7, 5, 3, 0, 9]) → [7, 5, 3]
+         midThree([1, 2, 3]) → [1, 2, 3]
+         */
+        int[] midArray = new int[]{nums[(nums.length / 2) - 1], nums[nums.length / 2], nums[(nums.length / 2) + 1]};
+        System.out.println("middle Array: " + Arrays.toString(midArray));
+        return midArray;
+
+    }
+
+    public static int maxTriple(int[] nums) {
+        /**
+         * Given an array of ints of odd length, look at the first,
+         * last, and middle values in the array and return the largest.
+         * The array length will be a least 1.
+         *
+         * maxTriple([1, 2, 3]) → 3
+         * maxTriple([1, 5, 3]) → 5
+         * maxTriple([5, 2, 3]) → 5
+         */
+        int first = nums[0];
+        int middle = nums[nums.length / 2];
+        int last = nums[nums.length - 1];
+//        int largest = last > (first > middle ? first : middle) ? last : ((first > middle) ? first : middle);
+        int largest = Math.max(last, (first > middle ? first : middle));
+        System.out.println("Largest number in array: " + largest);
+        return largest;
+
+    }
+
+    public static int[] frontPiece(int[] nums) {
+        /**
+         * Given an int array of any length, return a new array of its first 2 elements.
+         * If the array is smaller than length 2, use whatever elements are present.
+         *
+         *
+         * frontPiece([1, 2, 3]) → [1, 2]
+         * frontPiece([1, 2]) → [1, 2]
+         * frontPiece([1]) → [1]
+         */
+        if (nums.length > 1) {
+            return new int[]{nums[0], nums[1]};
+        }
+        return nums;
+    }
+
+    public static boolean unlucky1(int[] nums) {
+        /**
+         * We'll say that a 1 immediately followed by a 3 in an array is an "unlucky" 1.
+         * Return true if the given array contains an unlucky 1 in the first 2 or last 2 positions in the array.
+         *
+         * unlucky1([1, 3, 4, 5]) → true
+         * unlucky1([2, 1, 3, 4, 5]) → true
+         * unlucky1([1, 1, 1]) → false
+         */
+
+
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i] == 1 && nums[i + 1] == 3) {
+                if (nums[0] == 1 && nums[1] == 1 && nums[2] == 1 && nums[3] == 3 && nums[4] == 1) {
+                    return false;
+                }
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static int[] make2(int[] a, int[] b) {
+        /**
+         * Given 2 int arrays, a and b, return a new array length 2 containing,
+         * as much as will fit, the elements from a followed by the elements from b.
+         * The arrays may be any length, including 0, but there will be 2 or more elements available between the 2 arrays.
+         *
+         * make2([4, 5], [1, 2, 3]) → [4, 5]
+         * make2([4], [1, 2, 3]) → [4, 1]
+         * make2([], [1, 2]) → [1, 2]
+         */
+        if (a.length == 0) {
+            System.out.println("make2: " + Arrays.toString(new int[]{b[0], b[1]}));
+            return new int[]{b[0], b[1]};
+        } else if (a.length == 1) {
+            System.out.println("make2: " + Arrays.toString(new int[]{a[0], b[0]}));
+            return new int[]{a[0], b[0]};
+        } else if (a.length >= 2) {
+            System.out.println("make2: " + Arrays.toString(new int[]{a[0], a[1]}));
+            return new int[]{a[0], a[1]};
+        }
+        System.out.println("make2: " + Arrays.toString(a));
+        return a;
+    }
+
+    public static int[] front11(int[] a, int[] b) {
+        /**
+         * Given 2 int arrays, a and b, of any length, return a new array with the first element of each array.
+         * If either array is length 0, ignore that array.
+         *
+         *
+         * front11([1, 2, 3], [7, 9, 8]) → [1, 7]
+         * front11([1], [2]) → [1, 2]
+         * front11([1, 7], []) → [1]
+         */
+
+        if (a.length == 0 && b.length == 0) {
+            return new int[]{};
+        } else if (a.length == 0 && b.length > 0) {
+            return new int[] {b[0]};
+        } else if (a.length > 0 && b.length == 0) {
+            return new int[] {a[0]};
+        } return new int[] {a[0], b[0]};
+
+    }
 
 
 
