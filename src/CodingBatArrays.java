@@ -344,9 +344,66 @@ public class CodingBatArrays {
 
         //start1
         System.out.println("CodingBat Array-1 exercise: start1");
-
-
+        a = new int[] {1, 2, 3};
+        b = new int[] {1, 3};
+        start1(a, b);
+        a = new int[] {7, 2, 3};
+        b = new int[] {1};
+        start1(a, b);
+        a = new int[] {1, 2};
+        b = new int[] {};
+        start1(a, b);
+        a = new int[] {};
+        b = new int[] {1, 2};
+        start1(a, b);
+        a = new int[] {7};
+        b = new int[] {};
+        start1(a, b);
+        a = new int[] {7};
+        b = new int[] {1};
+        start1(a, b);
+        a = new int[] {1};
+        b = new int[] {1};
+        start1(a, b);
+        a = new int[] {7};
+        b = new int[] {8};
+        start1(a, b);
+        a = new int[] {};
+        b = new int[] {};
+        start1(a, b);
+        a = new int[] {1, 3};
+        b = new int[] {1};
+        start1(a, b);
         System.out.println("============");
+
+
+        //biggerTwo
+        System.out.println("CodingBat Array-1 exercise: biggerTwo");
+        a = new int[] {1, 2};
+        b = new int[] {3, 4};
+        biggerTwo(a, b);
+        a = new int[] {3, 4};
+        b = new int[] {1, 2};
+        biggerTwo(a, b);
+        a = new int[] {1, 1};
+        b = new int[] {1, 2};
+        biggerTwo(a, b);
+        a = new int[] {2, 1};
+        b = new int[] {1, 1};
+        biggerTwo(a, b);
+        a = new int[] {2, 2};
+        b = new int[] {1, 3};
+        biggerTwo(a, b);
+        a = new int[] {1, 3};
+        b = new int[] {2, 2};
+        biggerTwo(a, b);
+        a = new int[] {6, 7};
+        b = new int[] {3, 1};
+        biggerTwo(a, b);
+        System.out.println("============");
+
+
+
 
 
 
@@ -640,6 +697,55 @@ public class CodingBatArrays {
         System.out.println("fix23 = " + Arrays.toString(nums));
         return nums;
     }
+
+    public static int start1(int[] a, int[] b) {
+    /**
+     * Start with 2 int arrays, a and b, of any length. Return how many of the arrays have 1 as their first element.
+     *
+     * start1([1, 2, 3], [1, 3]) → 2
+     * start1([7, 2, 3], [1]) → 1
+     * start1([1, 2], []) → 1
+     */
+
+        int count = 0;
+        for (int i = 0; a.length > 0 || b.length > 0; i++) {
+            if (a.length > 0 && a[0] == 1) {
+                count += 1;
+                if (b.length > 0 && b[0] == 1) {
+                    count += 1;
+                }
+            } else if (b.length > 0 && b[0] == 1) {
+                count += 1;
+            } break;
+        }
+        System.out.println("Arrays having 1 as first element: " + count);
+        return count;
+    }
+
+    public static int[] biggerTwo(int[] a, int[] b) {
+    /**
+     * Start with 2 int arrays, a and b, each length 2. Consider the sum of the values in each array.
+     * Return the array which has the largest sum. In event of a tie, return a.
+     *
+     * biggerTwo([1, 2], [3, 4]) → [3, 4]
+     * biggerTwo([3, 4], [1, 2]) → [3, 4]
+     * biggerTwo([1, 1], [1, 2]) → [1, 2]
+     */
+        int sumA = a[0] + a[1];
+        int sumB = b[0] + b[1];
+
+        if (sumA > sumB) {
+            System.out.println("biggerTwo: " + Arrays.toString(a));
+            return a;
+        } else if (sumA < sumB) {
+            System.out.println("biggerTwo: " + Arrays.toString(b));
+            return b;
+        }
+        System.out.println("biggerTwo: " + Arrays.toString(a));
+        return a;
+    }
+
+
 
 
 
