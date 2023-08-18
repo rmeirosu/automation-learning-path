@@ -7,6 +7,7 @@ public class CodingBatLogic1 {
     public static void main(String[] args) {
 
         // cigarParty
+        System.out.println("cigarParty");
         System.out.println(cigarParty(30, false));
         System.out.println(cigarParty(50, false));
         System.out.println(cigarParty(70, true));
@@ -18,9 +19,11 @@ public class CodingBatLogic1 {
         System.out.println(cigarParty(39, false));
         System.out.println(cigarParty(40, true));
         System.out.println(cigarParty(39, true));
+        System.out.println("============");
 
 
         // dateFashion
+        System.out.println("dateFashion");
         System.out.println(dateFashion(5, 10));
         System.out.println(dateFashion(5, 2));
         System.out.println(dateFashion(5, 5));
@@ -33,7 +36,58 @@ public class CodingBatLogic1 {
         System.out.println(dateFashion(3, 7));
         System.out.println(dateFashion(2, 7));
         System.out.println(dateFashion(6, 2));
+        System.out.println("============");
 
+
+
+        // squirrelPlay
+        System.out.println("squirrelPlay");
+        System.out.println(squirrelPlay(70, false));
+        System.out.println(squirrelPlay(95, false));
+        System.out.println(squirrelPlay(95, true));
+        System.out.println(squirrelPlay(90, false));
+        System.out.println(squirrelPlay(90, true));
+        System.out.println(squirrelPlay(50, false));
+        System.out.println(squirrelPlay(50, true));
+        System.out.println(squirrelPlay(100, false));
+        System.out.println(squirrelPlay(100, true));
+        System.out.println(squirrelPlay(105, true));
+        System.out.println(squirrelPlay(59, false));
+        System.out.println(squirrelPlay(59, true));
+        System.out.println(squirrelPlay(60, false));
+        System.out.println("============");
+
+
+
+        // caughtSpeeding
+        System.out.println("caughtSpeeding");
+        System.out.println(caughtSpeeding(60, false));
+        System.out.println(caughtSpeeding(65, false));
+        System.out.println(caughtSpeeding(65, true));
+        System.out.println(caughtSpeeding(80, false));
+        System.out.println(caughtSpeeding(85, false));
+        System.out.println(caughtSpeeding(85, true));
+        System.out.println(caughtSpeeding(70, false));
+        System.out.println(caughtSpeeding(75, false));
+        System.out.println(caughtSpeeding(75, true));
+        System.out.println(caughtSpeeding(40, false));
+        System.out.println(caughtSpeeding(40, true));
+        System.out.println(caughtSpeeding(90, false));
+        System.out.println("============");
+
+
+        // sortaSum
+        System.out.println("sortaSum");
+        System.out.println(sortaSum(3, 4));
+        System.out.println(sortaSum(9, 4));
+        System.out.println(sortaSum(10, 11));
+        System.out.println(sortaSum(12, -3));
+        System.out.println(sortaSum(-3, 12));
+        System.out.println(sortaSum(4, 5));
+        System.out.println(sortaSum(4, 6));
+        System.out.println(sortaSum(14, 7));
+        System.out.println(sortaSum(14, 6));
+        System.out.println("============");
 
 
 
@@ -94,5 +148,83 @@ public class CodingBatLogic1 {
         } return 1;
 
     }
+
+    public static boolean squirrelPlay(int temp, boolean isSummer) {
+
+        /**
+         * The squirrels in Palo Alto spend most of the day playing.
+         * In particular, they play if the temperature is between 60 and 90 (inclusive).
+         * Unless it is summer, then the upper limit is 100 instead of 90.
+         * Given an int temperature and a boolean isSummer, return true if the squirrels play and false otherwise.
+         *
+         * squirrelPlay(70, false) → true
+         * squirrelPlay(95, false) → false
+         * squirrelPlay(95, true) → true
+         */
+
+        if (isSummer && (temp >= 60 && temp <= 100)) {
+            return true;
+
+        } else if (!isSummer && (temp >= 60 && temp <= 90)) {
+            return true;
+
+        } return false;
+
+    }
+
+    public static int caughtSpeeding(int speed, boolean isBirthday) {
+        /**
+         * You are driving a little too fast, and a police officer stops you.
+         * Write code to compute the result, encoded as an int value: 0=no ticket, 1=small ticket, 2=big ticket.
+         * If speed is 60 or less, the result is 0. If speed is between 61 and 80 inclusive, the result is 1.
+         * If speed is 81 or more, the result is 2.
+         * Unless it is your birthday -- on that day, your speed can be 5 higher in all cases.
+         *
+         * caughtSpeeding(60, false) → 0
+         * caughtSpeeding(65, false) → 1
+         * caughtSpeeding(65, true) → 0
+         */
+
+        if (isBirthday) {
+            if (speed <= 65) {
+                return 0;
+
+            } else if (speed <= 85) {
+                return 1;
+
+            } return 2;
+
+        } if (speed <= 60) {
+            return 0;
+
+        } else if (speed <= 80) {
+            return 1;
+
+        } return 2;
+    }
+
+    public static int sortaSum(int a, int b) {
+        /**
+         * Given 2 ints, a and b, return their sum.
+         * However, sums in the range 10..19 inclusive, are forbidden, so in that case just return 20.
+         *
+         * sortaSum(3, 4) → 7
+         * sortaSum(9, 4) → 20
+         * sortaSum(10, 11) → 21
+         */
+
+        int sum = a + b;
+
+        if (sum >= 10 && sum <= 19) {
+            return 20;
+
+        } return sum;
+
+    }
+
+
+
+
+
 
 }
