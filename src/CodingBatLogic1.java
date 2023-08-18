@@ -497,33 +497,73 @@ public class CodingBatLogic1 {
         System.out.println("============");
 
 
+        // greenTicket
+        System.out.println("greenTicket");
+        System.out.println(greenTicket(1, 2, 3));
+        System.out.println(greenTicket(2, 2, 2));
+        System.out.println(greenTicket(1, 1, 2));
+        System.out.println(greenTicket(2, 1, 1));
+        System.out.println(greenTicket(1, 2, 1));
+        System.out.println(greenTicket(3, 2, 1));
+        System.out.println(greenTicket(0, 0, 0));
+        System.out.println(greenTicket(2, 0, 0));
+        System.out.println(greenTicket(0, 9, 10));
+        System.out.println(greenTicket(0, 10, 0));
+        System.out.println(greenTicket(9, 9, 9));
+        System.out.println(greenTicket(9, 0, 9));
+        System.out.println("============");
 
 
+        // blueTicket
+        System.out.println("blueTicket");
+        System.out.println(blueTicket(9, 1, 0));
+        System.out.println(blueTicket(9, 2, 0));
+        System.out.println(blueTicket(6, 1, 4));
+        System.out.println(blueTicket(6, 1, 5));
+        System.out.println(blueTicket(10, 0, 0));
+        System.out.println(blueTicket(15, 0, 5));
+        System.out.println(blueTicket(5, 15, 5));
+        System.out.println(blueTicket(4, 11, 1));
+        System.out.println(blueTicket(13, 2, 3));
+        System.out.println(blueTicket(8, 4, 3));
+        System.out.println(blueTicket(8, 4, 2));
+        System.out.println(blueTicket(8, 4, 1));
+        System.out.println("============");
 
 
+        // shareDigit
+        System.out.println("shareDigit");
+        System.out.println(shareDigit(12, 23));
+        System.out.println(shareDigit(12, 43));
+        System.out.println(shareDigit(12, 44));
+        System.out.println(shareDigit(23, 12));
+        System.out.println(shareDigit(23, 39));
+        System.out.println(shareDigit(23, 19));
+        System.out.println(shareDigit(30, 90));
+        System.out.println(shareDigit(30, 91));
+        System.out.println(shareDigit(55, 55));
+        System.out.println(shareDigit(55, 44));
+        System.out.println("============");
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        // sumLimit
+        System.out.println("sumLimit");
+        System.out.println(sumLimit(2, 3));
+        System.out.println(sumLimit(8, 3));
+        System.out.println(sumLimit(8, 1));
+        System.out.println(sumLimit(11, 39));
+        System.out.println(sumLimit(11, 99));
+        System.out.println(sumLimit(0, 0));
+        System.out.println(sumLimit(99, 0));
+        System.out.println(sumLimit(99, 1));
+        System.out.println(sumLimit(123, 1));
+        System.out.println(sumLimit(1, 123));
+        System.out.println(sumLimit(23, 60));
+        System.out.println(sumLimit(23, 80));
+        System.out.println(sumLimit(9000, 1));
+        System.out.println(sumLimit(90000000, 1));
+        System.out.println(sumLimit(9000, 1000));
+        System.out.println("============");
 
     }
 
@@ -1099,29 +1139,100 @@ public class CodingBatLogic1 {
 
     }
 
+    public static int greenTicket(int a, int b, int c) {
+        /**
+         * You have a green lottery ticket, with ints a, b, and c on it.
+         * If the numbers are all different from each other, the result is 0.
+         * If all of the numbers are the same, the result is 20.
+         * If two of the numbers are the same, the result is 10.
+         *
+         * greenTicket(1, 2, 3) → 0
+         * greenTicket(2, 2, 2) → 20
+         * greenTicket(1, 1, 2) → 10
+         */
 
+        if (a == b && b == c) {
+            return 20;
+        }
 
+        if (a == b || a == c || b == c) {
+            return 10;
+        }
 
+        return 0;
 
+    }
 
+    public static int blueTicket(int a, int b, int c) {
+        /**
+         * You have a blue lottery ticket, with ints a, b, and c on it.
+         * This makes three pairs, which we'll call ab, bc, and ac.
+         * Consider the sum of the numbers in each pair.
+         * If any pair sums to exactly 10, the result is 10.
+         * Otherwise if the ab sum is exactly 10 more than either bc or ac sums, the result is 5.
+         * Otherwise the result is 0.
+         *
+         * blueTicket(9, 1, 0) → 10
+         * blueTicket(9, 2, 0) → 0
+         * blueTicket(6, 1, 4) → 10
+         */
+        int ab = a + b;
+        int bc = b + c;
+        int ac = a + c;
 
+        if (ab == 10 || bc == 10 || ac == 10) {
+            return 10;
+        }
 
+        if (ab - bc == 10 || ab - ac == 10) {
+            return 5;
+        }
 
+        return 0;
+    }
 
+    public static boolean shareDigit(int a, int b) {
+        /**
+         * Given two ints, each in the range 10..99, return true if there is a digit that appears in both numbers,
+         * such as the 2 in 12 and 23. (Note: division, e.g. n/10, gives the left digit
+         * while the % "mod" n%10 gives the right digit.)
+         *
+         * shareDigit(12, 23) → true
+         * shareDigit(12, 43) → false
+         * shareDigit(12, 44) → false
+         */
 
+        int aLeft = a / 10;
+        int aRight = a % 10;
+        int bLeft = b / 10;
+        int bRight = b % 10;
 
+        return (aLeft == bLeft || aLeft == bRight || aRight == bLeft || aRight == bRight);
 
+    }
 
+    public static int sumLimit(int a, int b) {
+        /**
+         * Given 2 non-negative ints, a and b, return their sum,
+         * so long as the sum has the same number of digits as a.
+         * If the sum has more digits than a, just return a without b.
+         * (Note: one way to compute the number of digits of a non-negative int n is
+         * to convert it to a string with String.valueOf(n) and then check the length of the string.)
+         *
+         * sumLimit(2, 3) → 5
+         * sumLimit(8, 3) → 8
+         * sumLimit(8, 1) → 9
+         */
 
+        String str1 = Integer.toString(a+b);
+        String str2 = Integer.toString(a);
 
+        if (str1.length() == str2.length()) {
+            return a+b;
+        }
 
+        return a;
 
-
-
-
-
-
-
-
+    }
 
 }
