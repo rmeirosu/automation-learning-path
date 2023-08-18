@@ -147,6 +147,113 @@ public class CodingBatLogic1 {
         System.out.println("============");
 
 
+        // specialEleven
+        System.out.println("specialEleven");
+        System.out.println(specialEleven(22));
+        System.out.println(specialEleven(23));
+        System.out.println(specialEleven(24));
+        System.out.println(specialEleven(21));
+        System.out.println(specialEleven(11));
+        System.out.println(specialEleven(12));
+        System.out.println(specialEleven(10));
+        System.out.println(specialEleven(9));
+        System.out.println(specialEleven(8));
+        System.out.println(specialEleven(0));
+        System.out.println(specialEleven(1));
+        System.out.println(specialEleven(2));
+        System.out.println(specialEleven(121));
+        System.out.println(specialEleven(122));
+        System.out.println(specialEleven(123));
+        System.out.println(specialEleven(46));
+        System.out.println(specialEleven(49));
+        System.out.println(specialEleven(52));
+        System.out.println(specialEleven(54));
+        System.out.println(specialEleven(55));
+        System.out.println("============");
+
+
+        // more20
+        System.out.println("more20");
+        System.out.println(more20(20));
+        System.out.println(more20(21));
+        System.out.println(more20(22));
+        System.out.println(more20(23));
+        System.out.println(more20(25));
+        System.out.println(more20(30));
+        System.out.println(more20(31));
+        System.out.println(more20(59));
+        System.out.println(more20(60));
+        System.out.println(more20(61));
+        System.out.println(more20(62));
+        System.out.println(more20(1020));
+        System.out.println(more20(1021));
+        System.out.println(more20(1000));
+        System.out.println(more20(1001));
+        System.out.println(more20(50));
+        System.out.println(more20(55));
+        System.out.println(more20(40));
+        System.out.println(more20(41));
+        System.out.println(more20(39));
+        System.out.println(more20(42));
+        System.out.println("============");
+
+
+        // old35
+        System.out.println("old35");
+        System.out.println(old35(3));
+        System.out.println(old35(10));
+        System.out.println(old35(15));
+        System.out.println(old35(5));
+        System.out.println(old35(9));
+        System.out.println(old35(8));
+        System.out.println(old35(7));
+        System.out.println(old35(6));
+        System.out.println(old35(17));
+        System.out.println(old35(18));
+        System.out.println(old35(29));
+        System.out.println(old35(20));
+        System.out.println(old35(21));
+        System.out.println(old35(22));
+        System.out.println(old35(45));
+        System.out.println(old35(99));
+        System.out.println("============");
+
+
+        // less20
+        System.out.println("less20");
+        System.out.println(less20(18));
+        System.out.println(less20(19));
+        System.out.println(less20(20));
+        System.out.println(less20(8));
+        System.out.println(less20(17));
+        System.out.println(less20(23));
+        System.out.println(less20(25));
+        System.out.println(less20(30));
+        System.out.println(less20(31));
+        System.out.println(less20(58));
+        System.out.println(less20(59));
+        System.out.println(less20(60));
+        System.out.println(less20(61));
+        System.out.println(less20(62));
+        System.out.println(less20(1017));
+        System.out.println(less20(1018));
+        System.out.println(less20(1019));
+        System.out.println(less20(1020));
+        System.out.println(less20(1021));
+        System.out.println(less20(1022));
+        System.out.println(less20(1023));
+        System.out.println(less20(37));
+        System.out.println("============");
+
+
+
+
+
+
+
+
+
+
     }
 
     public static boolean cigarParty(int cigars, boolean isWeekend) {
@@ -363,6 +470,68 @@ public class CodingBatLogic1 {
 
 
     }
+
+    public static boolean specialEleven(int n) {
+        /**
+         * We'll say a number is special if it is a multiple of 11
+         * or if it is one more than a multiple of 11.
+         * Return true if the given non-negative number is special.
+         * Use the % "mod" operator
+         *
+         * specialEleven(22) → true
+         * specialEleven(23) → true
+         * specialEleven(24) → false
+         */
+        return ((n % 11 == 0) || (n % 11 == 1));
+
+    }
+
+    public static boolean more20(int n) {
+
+        /**
+         * Return true if the given non-negative number is 1 or 2 more than a multiple of 20.
+         *
+         * more20(20) → false
+         * more20(21) → true
+         * more20(22) → true
+         */
+
+        return (n % 20 == 1 || n % 20 == 2);
+
+    }
+
+    public static boolean old35(int n) {
+        /**
+         * Return true if the given non-negative number is a multiple of 3 or 5, but not both.
+         * Use the % "mod" operator
+         *
+         * old35(3) → true
+         * old35(10) → true
+         * old35(15) → false
+         */
+        return (n % 3 == 0 && !(n % 5 == 0) || !(n % 3 == 0) && n % 5 == 0);
+
+    }
+
+    public static boolean less20(int n) {
+        /**
+         * Return true if the given non-negative number is 1 or 2 less than a multiple of 20.
+         * So for example 38 and 39 return true, but 40 returns false.
+         *
+         * less20(18) → true
+         * less20(19) → true
+         * less20(20) → false
+         */
+
+        return ((n + 1) % 20 == 0 || (n + 2) % 20 == 0);
+
+    }
+
+
+
+
+
+
 
 
 }
