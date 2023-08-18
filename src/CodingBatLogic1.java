@@ -315,6 +315,201 @@ public class CodingBatLogic1 {
         System.out.println("============");
 
 
+        // fizzString
+        System.out.println("fizzString");
+        System.out.println(fizzString("fig"));
+        System.out.println(fizzString("dib"));
+        System.out.println(fizzString("fib"));
+        System.out.println(fizzString("abc"));
+        System.out.println(fizzString("fooo"));
+        System.out.println(fizzString("booo"));
+        System.out.println(fizzString("ooob"));
+        System.out.println(fizzString("fooob"));
+        System.out.println(fizzString("f"));
+        System.out.println(fizzString("b"));
+        System.out.println(fizzString("abcb"));
+        System.out.println(fizzString("Hello"));
+        System.out.println(fizzString("Hellob"));
+        System.out.println(fizzString("af"));
+        System.out.println(fizzString("bf"));
+        System.out.println(fizzString("fb"));
+        System.out.println("============");
+
+
+        // fizzString2
+        System.out.println("fizzString2");
+        System.out.println(fizzString2(1));
+        System.out.println(fizzString2(2));
+        System.out.println(fizzString2(3));
+        System.out.println(fizzString2(4));
+        System.out.println(fizzString2(5));
+        System.out.println(fizzString2(6));
+        System.out.println(fizzString2(7));
+        System.out.println(fizzString2(8));
+        System.out.println(fizzString2(9));
+        System.out.println(fizzString2(15));
+        System.out.println(fizzString2(16));
+        System.out.println(fizzString2(18));
+        System.out.println(fizzString2(19));
+        System.out.println(fizzString2(21));
+        System.out.println(fizzString2(44));
+        System.out.println(fizzString2(45));
+        System.out.println(fizzString2(100));
+        System.out.println("============");
+
+
+        // twoAsOne
+        System.out.println("twoAsOne");
+        System.out.println(twoAsOne(1, 2, 3));
+        System.out.println(twoAsOne(3, 1, 2));
+        System.out.println(twoAsOne(3, 2, 2));
+        System.out.println(twoAsOne(2, 3, 1));
+        System.out.println(twoAsOne(5, 3, -2));
+        System.out.println(twoAsOne(5, 3, -3));
+        System.out.println(twoAsOne(2, 5, 3));
+        System.out.println(twoAsOne(9, 5, 5));
+        System.out.println(twoAsOne(9, 4, 5));
+        System.out.println(twoAsOne(5, 4, 9));
+        System.out.println(twoAsOne(3, 3, 0));
+        System.out.println(twoAsOne(3, 3, 2));
+        System.out.println("============");
+
+
+        // inOrder
+        System.out.println("inOrder");
+        System.out.println(inOrder(1, 2, 4, false));
+        System.out.println(inOrder(1, 2, 1, false));
+        System.out.println(inOrder(1, 1, 2, true));
+        System.out.println(inOrder(3, 2, 4, false));
+        System.out.println(inOrder(2, 3, 4, false));
+        System.out.println(inOrder(3, 2, 4, true));
+        System.out.println(inOrder(4, 2, 2, true));
+        System.out.println(inOrder(4, 5, 2, true));
+        System.out.println(inOrder(2, 4, 6, true));
+        System.out.println(inOrder(7, 9, 10, false));
+        System.out.println(inOrder(7, 5, 6, true));
+        System.out.println(inOrder(7, 5, 4, true));
+        System.out.println("============");
+
+
+        // inOrderEqual
+        System.out.println("inOrderEqual");
+        System.out.println(inOrderEqual(2, 5, 11, false));
+        System.out.println(inOrderEqual(5, 7, 6, false));
+        System.out.println(inOrderEqual(5, 5, 7, true));
+        System.out.println(inOrderEqual(5, 5, 7, false));
+        System.out.println(inOrderEqual(2, 5, 4, false));
+        System.out.println(inOrderEqual(3, 4, 3, false));
+        System.out.println(inOrderEqual(3, 4, 4, false));
+        System.out.println(inOrderEqual(3, 4, 3, true));
+        System.out.println(inOrderEqual(3, 4, 4, true));
+        System.out.println(inOrderEqual(1, 5, 5, true));
+        System.out.println(inOrderEqual(5, 5, 5, true));
+        System.out.println(inOrderEqual(2, 2, 1, true));
+        System.out.println(inOrderEqual(9, 2, 2, true));
+        System.out.println(inOrderEqual(0, 1, 0, true));
+        System.out.println("============");
+
+
+        // lastDigit
+        System.out.println("lastDigit");
+        System.out.println(lastDigit(23, 19, 13));
+        System.out.println(lastDigit(23, 19, 12));
+        System.out.println(lastDigit(23, 19, 3));
+        System.out.println(lastDigit(23, 19, 39));
+        System.out.println(lastDigit(1, 2, 3));
+        System.out.println(lastDigit(1, 1, 2));
+        System.out.println(lastDigit(1, 2, 2));
+        System.out.println(lastDigit(14, 25, 43));
+        System.out.println(lastDigit(14, 25, 45));
+        System.out.println(lastDigit(248, 106, 1002));
+        System.out.println(lastDigit(248, 106, 1008));
+        System.out.println(lastDigit(10, 11, 20));
+        System.out.println(lastDigit(0, 11, 0));
+        System.out.println("============");
+
+
+        // lessBy10
+        System.out.println("lessBy10");
+        System.out.println(lessBy10(1, 7, 11));
+        System.out.println(lessBy10(1, 7, 10));
+        System.out.println(lessBy10(11, 1, 7));
+        System.out.println(lessBy10(10, 7, 1));
+        System.out.println(lessBy10(-10, 2, 2));
+        System.out.println(lessBy10(2, 11, 11));
+        System.out.println(lessBy10(3, 3, 30));
+        System.out.println(lessBy10(3, 3, 3));
+        System.out.println(lessBy10(10, 1, 11));
+        System.out.println(lessBy10(10, 11, 1));
+        System.out.println(lessBy10(10, 11, 2));
+        System.out.println(lessBy10(3, 30, 3));
+        System.out.println(lessBy10(2, 2, -8));
+        System.out.println(lessBy10(2, 8, 12));
+        System.out.println("============");
+
+
+        // withoutDoubles
+        System.out.println("withoutDoubles");
+        System.out.println(withoutDoubles(2, 3, true));
+        System.out.println(withoutDoubles(3, 3, true));
+        System.out.println(withoutDoubles(3, 3, false));
+        System.out.println(withoutDoubles(2, 3, false));
+        System.out.println(withoutDoubles(5, 4, true));
+        System.out.println(withoutDoubles(5, 4, false));
+        System.out.println(withoutDoubles(5, 5, true));
+        System.out.println(withoutDoubles(5, 5, false));
+        System.out.println(withoutDoubles(6, 6, true));
+        System.out.println(withoutDoubles(6, 6, false));
+        System.out.println(withoutDoubles(1, 6, true));
+        System.out.println(withoutDoubles(6, 1, false));
+        System.out.println("============");
+
+
+        // maxMod5
+        System.out.println("maxMod5");
+        System.out.println(maxMod5(2, 3));
+        System.out.println(maxMod5(6, 2));
+        System.out.println(maxMod5(3, 2));
+        System.out.println(maxMod5(8, 12));
+        System.out.println(maxMod5(7, 12));
+        System.out.println(maxMod5(11, 6));
+        System.out.println(maxMod5(2, 7));
+        System.out.println(maxMod5(7, 7));
+        System.out.println(maxMod5(9, 1));
+        System.out.println(maxMod5(9, 14));
+        System.out.println(maxMod5(1, 2));
+        System.out.println("============");
+
+
+        // redTicket
+        System.out.println("redTicket");
+        System.out.println(redTicket(2, 2, 2));
+        System.out.println(redTicket(2, 2, 1));
+        System.out.println(redTicket(0, 0, 0));
+        System.out.println(redTicket(2, 0, 0));
+        System.out.println(redTicket(1, 1, 1));
+        System.out.println(redTicket(1, 2, 1));
+        System.out.println(redTicket(1, 2, 0));
+        System.out.println(redTicket(0, 2, 2));
+        System.out.println(redTicket(1, 2, 2));
+        System.out.println(redTicket(0, 2, 0));
+        System.out.println(redTicket(1, 1, 2));
+        System.out.println("============");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -680,6 +875,239 @@ public class CodingBatLogic1 {
         } return 1;
 
     }
+
+    public static String fizzString(String str) {
+
+        /**
+         * Given a string str, if the string starts with "f" return "Fizz".
+         * If the string ends with "b" return "Buzz". If both the "f" and "b" conditions are true, return "FizzBuzz".
+         * In all other cases, return the string unchanged. (See also: FizzBuzz Code)
+         *
+         * fizzString("fig") → "Fizz"
+         * fizzString("dib") → "Buzz"
+         * fizzString("fib") → "FizzBuzz"
+         */
+
+        // first character of the string
+        String starts = str.substring(0, 1);
+        // last character of the string
+        String ends = str.substring(str.length() -1);
+
+        if (starts.equals("f") && ends.equals("b")) {
+            return "FizzBuzz";
+        }
+
+        if (starts.equals("f")) {
+            return "Fizz";
+        }
+
+        if (ends.equals("b")) {
+            return "Buzz";
+        }
+
+        return str;
+
+    }
+
+    public static String fizzString2(int n) {
+
+        /**
+         * Given an int n, return the string form of the number followed by "!".
+         * So the int 6 yields "6!".
+         * Except if the number is divisible by 3 use "Fizz" instead of the number,
+         * and if the number is divisible by 5 use "Buzz", and if divisible by both 3 and 5, use "FizzBuzz".
+         * Note: the % "mod" operator computes the remainder after division, so 23 % 10 yields 3.
+         * What will the remainder be when one number divides evenly into another?
+         *
+         * fizzString2(1) → "1!"
+         * fizzString2(2) → "2!"
+         * fizzString2(3) → "Fizz!"
+         */
+
+        if (n % 3 == 0 && n % 5 == 0) {
+            return "FizzBuzz!";
+        }
+
+        if (n % 3 == 0) {
+            return "Fizz!";
+        }
+
+        if (n % 5 == 0) {
+            return "Buzz!";
+        }
+
+        return n + "!";
+    }
+
+    public static boolean twoAsOne(int a, int b, int c) {
+        /**
+         * Given three ints, a b c, return true if it is possible to add two of the ints to get the third.
+         *
+         * twoAsOne(1, 2, 3) → true
+         * twoAsOne(3, 1, 2) → true
+         * twoAsOne(3, 2, 2) → false
+         */
+
+        return ((a == b + c) || (b == a + c) || (c == a + b));
+
+    }
+
+    public static boolean inOrder(int a, int b, int c, boolean bOk) {
+
+        /**
+         * Given three ints, a b c, return true if b is greater than a, and c is greater than b.
+         * However, with the exception that if "bOk" is true, b does not need to be greater than a.
+         *
+         * inOrder(1, 2, 4, false) → true
+         * inOrder(1, 2, 1, false) → false
+         * inOrder(1, 1, 2, true) → true
+         */
+
+        return ((!bOk && (b>a && c>b)) || (bOk && (c>b)));
+
+    }
+
+    public static boolean inOrderEqual(int a, int b, int c, boolean equalOk) {
+
+        /**
+         *
+         Given three ints, a b c, return true if they are in strict increasing order,
+         such as 2 5 11, or 5 6 7, but not 6 5 7 or 5 5 7.
+         However, with the exception that if "equalOk" is true, equality is allowed, such as 5 5 7 or 5 5 5.
+
+         inOrderEqual(2, 5, 11, false) → true
+         inOrderEqual(5, 7, 6, false) → false
+         inOrderEqual(5, 5, 7, true) → true
+         */
+
+        if (!equalOk && (a < b) && (b < c)) {
+            return true;
+        }
+        if (equalOk && (a <= b && b <= c)) {
+            return true;
+        }
+        return false;
+
+
+    }
+
+    public static boolean lastDigit(int a, int b, int c) {
+        /**
+         * Given three ints, a b c, return true if two or more of them have the same rightmost digit.
+         * The ints are non-negative. Note: the % "mod" operator computes the remainder, e.g. 17 % 10 is 7.
+         *
+         * lastDigit(23, 19, 13) → true
+         * lastDigit(23, 19, 12) → false
+         * lastDigit(23, 19, 3) → true
+         */
+
+        int remA = a % 10;
+        int remB = b % 10;
+        int remC = c % 10;
+
+        return (remA == remB || remB == remC || remC == remA);
+    }
+
+    public static boolean lessBy10(int a, int b, int c) {
+        /**
+         * Given three ints, a b c, return true if one of them is 10 or more less than one of the others.
+         *
+         *
+         * lessBy10(1, 7, 11) → true
+         * lessBy10(1, 7, 10) → false
+         * lessBy10(11, 1, 7) → true
+         */
+        return  Math.abs(a - b) >= 10 || Math.abs(a - c) >= 10 || Math.abs(b - c) >= 10;
+
+    }
+
+    public static int withoutDoubles(int die1, int die2, boolean noDoubles) {
+        /**
+         *
+         Return the sum of two 6-sided dice rolls, each in the range 1..6.
+         However, if noDoubles is true, if the two dice show the same value,
+         increment one die to the next value, wrapping around to 1 if its value was 6.
+
+         withoutDoubles(2, 3, true) → 5
+         withoutDoubles(3, 3, true) → 7
+         withoutDoubles(3, 3, false) → 6
+         */
+
+        int sum = die1 + die2;
+
+        if (die1 == 6 && die2 == 6 && noDoubles) {
+            return die1 + 1;
+
+        } else if (die1 == die2 && noDoubles) {
+            return sum + 1;
+
+        } return sum;
+
+    }
+
+    public static int maxMod5(int a, int b) {
+        /**
+         * Given two int values, return whichever value is larger.
+         * However if the two values have the same remainder when divided by 5,
+         * then the return the smaller value.
+         * However, in all cases, if the two values are the same, return 0.
+         * Note: the % "mod" operator computes the remainder, e.g. 7 % 5 is 2.
+         *
+         * maxMod5(2, 3) → 3
+         * maxMod5(6, 2) → 6
+         * maxMod5(3, 2) → 3
+         */
+
+        if (a == b) {
+            return 0;
+        }
+
+        if (a % 5 == b % 5) {
+            return Math.min(a,b);
+        }
+
+        return Math.max(a,b);
+
+    }
+
+    public static int redTicket(int a, int b, int c) {
+        /**
+         * You have a red lottery ticket showing ints a, b, and c, each of which is 0, 1, or 2.
+         * If they are all the value 2, the result is 10.
+         * Otherwise if they are all the same, the result is 5.
+         * Otherwise so long as both b and c are different from a, the result is 1.
+         * Otherwise the result is 0.
+         *
+         * redTicket(2, 2, 2) → 10
+         * redTicket(2, 2, 1) → 0
+         * redTicket(0, 0, 0) → 5
+         */
+
+        if (a == 2 && b == 2 && c == 2) {
+            return 10;
+        }
+
+        if ( a == b && b == c) {
+            return 5;
+        }
+
+        if ( a != b && a != c) {
+            return 1;
+        }
+
+        return 0;
+
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
