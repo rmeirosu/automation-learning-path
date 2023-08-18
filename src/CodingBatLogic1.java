@@ -246,6 +246,82 @@ public class CodingBatLogic1 {
         System.out.println("============");
 
 
+        // nearTen
+        System.out.println("nearTen");
+        System.out.println(nearTen(12));
+        System.out.println(nearTen(17));
+        System.out.println(nearTen(19));
+        System.out.println(nearTen(31));
+        System.out.println(nearTen(6));
+        System.out.println(nearTen(10));
+        System.out.println(nearTen(11));
+        System.out.println(nearTen(21));
+        System.out.println(nearTen(22));
+        System.out.println(nearTen(23));
+        System.out.println(nearTen(54));
+        System.out.println(nearTen(155));
+        System.out.println(nearTen(158));
+        System.out.println(nearTen(3));
+        System.out.println(nearTen(1));
+        System.out.println("============");
+
+        // teenSum
+        System.out.println("teenSum");
+        System.out.println(teenSum(3, 4));
+        System.out.println(teenSum(10, 13));
+        System.out.println(teenSum(13, 2));
+        System.out.println(teenSum(3, 19));
+        System.out.println(teenSum(13, 13));
+        System.out.println(teenSum(10, 10));
+        System.out.println(teenSum(6, 14));
+        System.out.println(teenSum(15, 2));
+        System.out.println(teenSum(19, 19));
+        System.out.println(teenSum(19, 20));
+        System.out.println(teenSum(2, 18));
+        System.out.println(teenSum(12, 4));
+        System.out.println(teenSum(2, 20));
+        System.out.println(teenSum(2, 17));
+        System.out.println(teenSum(2, 16));
+        System.out.println(teenSum(6, 7));
+        System.out.println("============");
+
+
+        // answerCell
+        System.out.println("answerCell");
+        System.out.println(answerCell(false, false, false));
+        System.out.println(answerCell(false, false, true));
+        System.out.println(answerCell(true, false, false));
+        System.out.println(answerCell(true, true, false));
+        System.out.println(answerCell(false, true, false));
+        System.out.println(answerCell(true, true, true));
+        System.out.println("============");
+
+
+        // teaParty
+        System.out.println("teaParty");
+        System.out.println(teaParty(6, 8));
+        System.out.println(teaParty(3, 8));
+        System.out.println(teaParty(20, 6));
+        System.out.println(teaParty(12, 6));
+        System.out.println(teaParty(11, 6));
+        System.out.println(teaParty(11, 4));
+        System.out.println(teaParty(4, 5));
+        System.out.println(teaParty(5, 5));
+        System.out.println(teaParty(6, 6));
+        System.out.println(teaParty(5, 10));
+        System.out.println(teaParty(5, 9));
+        System.out.println(teaParty(10, 4));
+        System.out.println(teaParty(10, 20));
+        System.out.println("============");
+
+
+
+
+
+
+
+
+
 
 
 
@@ -526,6 +602,92 @@ public class CodingBatLogic1 {
         return ((n + 1) % 20 == 0 || (n + 2) % 20 == 0);
 
     }
+
+    public static boolean nearTen(int num) {
+
+        /**
+         * Given a non-negative number "num", return true if num is within 2 of a multiple of 10.
+         * Note: (a % b) is the remainder of dividing a by b, so (7 % 5) is 2.
+         *
+         * nearTen(12) → true
+         * nearTen(17) → false
+         * nearTen(19) → true
+         */
+
+        return (num % 10 <= 2 || num % 10 >= 8);
+    }
+
+    public static int teenSum(int a, int b) {
+        /**
+         * Given 2 ints, a and b, return their sum.
+         * However, "teen" values in the range 13..19 inclusive, are extra lucky.
+         * So if either value is a teen, just return 19.
+         *
+         *
+         * teenSum(3, 4) → 7
+         * teenSum(10, 13) → 19
+         * teenSum(13, 2) → 19
+         */
+
+        if (a >= 13 && a <= 19) {
+            return 19;
+        } else if (b >= 13 && b <= 19) {
+            return 19;
+        }
+        return a + b;
+    }
+
+    public static boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep) {
+        /**
+         * Your cell phone rings. Return true if you should answer it.
+         * Normally you answer, except in the morning you only answer if it is your mom calling.
+         * In all cases, if you are asleep, you do not answer.
+         *
+         * answerCell(false, false, false) → true
+         * answerCell(false, false, true) → false
+         * answerCell(true, false, false) → false
+         */
+
+        if (isAsleep) {
+            return false;
+        } else {
+            if (isMorning && !isMom) {
+                return false;
+            } return true;
+        }
+
+    }
+
+    public static int teaParty(int tea, int candy) {
+        /**
+         * We are having a party with amounts of tea and candy.
+         * Return the int outcome of the party encoded as 0=bad, 1=good, or 2=great.
+         * A party is good (1) if both tea and candy are at least 5.
+         * However, if either tea or candy is at least double the amount of the other one, the party is great (2).
+         * However, in all cases, if either tea or candy is less than 5, the party is always bad (0).
+         *
+         * teaParty(6, 8) → 1
+         * teaParty(3, 8) → 0
+         * teaParty(20, 6) → 2
+         */
+
+        if (tea < 5 || candy < 5) {
+            return 0;
+
+        } else if ((tea >= 2 * candy) || (candy >= 2 * tea)) {
+            return 2;
+
+        } return 1;
+
+    }
+
+
+
+
+
+
+
+
 
 
 
