@@ -39,7 +39,6 @@ public class CodingBatLogic1 {
         System.out.println("============");
 
 
-
         // squirrelPlay
         System.out.println("squirrelPlay");
         System.out.println(squirrelPlay(70, false));
@@ -56,7 +55,6 @@ public class CodingBatLogic1 {
         System.out.println(squirrelPlay(59, true));
         System.out.println(squirrelPlay(60, false));
         System.out.println("============");
-
 
 
         // caughtSpeeding
@@ -90,6 +88,64 @@ public class CodingBatLogic1 {
         System.out.println("============");
 
 
+        // alarmClock
+        System.out.println("alarmClock");
+        System.out.println(alarmClock(1, false));
+        System.out.println(alarmClock(5, false));
+        System.out.println(alarmClock(0, false));
+        System.out.println(alarmClock(6, false));
+        System.out.println(alarmClock(0, true));
+        System.out.println(alarmClock(6, true));
+        System.out.println(alarmClock(1, true));
+        System.out.println(alarmClock(3, true));
+        System.out.println(alarmClock(5, true));
+        System.out.println("============");
+
+
+        // love6
+        System.out.println("love6");
+        System.out.println(love6(6, 4));
+        System.out.println(love6(4, 5));
+        System.out.println(love6(1, 5));
+        System.out.println(love6(1, 6));
+        System.out.println(love6(1, 8));
+        System.out.println(love6(1, 7));
+        System.out.println(love6(7, 5));
+        System.out.println(love6(8, 2));
+        System.out.println(love6(6, 6));
+        System.out.println(love6(-6, 2));
+        System.out.println(love6(-4, -10));
+        System.out.println(love6(-7, 1));
+        System.out.println(love6(7, -1));
+        System.out.println(love6(-6, 12));
+        System.out.println(love6(-2, -4));
+        System.out.println(love6(7, 1));
+        System.out.println(love6(0, 9));
+        System.out.println(love6(8, 3));
+        System.out.println(love6(3, 3));
+        System.out.println(love6(3, 4));
+        System.out.println("============");
+
+
+        // in1To10
+        System.out.println("in1To10");
+        System.out.println(in1To10(5, false));
+        System.out.println(in1To10(11, false));
+        System.out.println(in1To10(11, true));
+        System.out.println(in1To10(10, false));
+        System.out.println(in1To10(10, true));
+        System.out.println(in1To10(9, false));
+        System.out.println(in1To10(9, true));
+        System.out.println(in1To10(1, false));
+        System.out.println(in1To10(1, true));
+        System.out.println(in1To10(0, false));
+        System.out.println(in1To10(0, true));
+        System.out.println(in1To10(-1, false));
+        System.out.println(in1To10(-1, true));
+        System.out.println(in1To10(99, false));
+        System.out.println(in1To10(-99, true));
+        System.out.println("============");
+
 
     }
 
@@ -119,7 +175,8 @@ public class CodingBatLogic1 {
                 return true;
             }
 
-        } return false;
+        }
+        return false;
 
     }
 
@@ -145,7 +202,8 @@ public class CodingBatLogic1 {
         } else if (you >= 8 || date >= 8) {
             return 2;
 
-        } return 1;
+        }
+        return 1;
 
     }
 
@@ -168,7 +226,8 @@ public class CodingBatLogic1 {
         } else if (!isSummer && (temp >= 60 && temp <= 90)) {
             return true;
 
-        } return false;
+        }
+        return false;
 
     }
 
@@ -192,15 +251,18 @@ public class CodingBatLogic1 {
             } else if (speed <= 85) {
                 return 1;
 
-            } return 2;
+            }
+            return 2;
 
-        } if (speed <= 60) {
+        }
+        if (speed <= 60) {
             return 0;
 
         } else if (speed <= 80) {
             return 1;
 
-        } return 2;
+        }
+        return 2;
     }
 
     public static int sortaSum(int a, int b) {
@@ -218,13 +280,89 @@ public class CodingBatLogic1 {
         if (sum >= 10 && sum <= 19) {
             return 20;
 
-        } return sum;
+        }
+        return sum;
 
     }
 
+    public static String alarmClock(int day, boolean vacation) {
+        /**
+         * Given a day of the week encoded as 0=Sun, 1=Mon, 2=Tue, ...6=Sat,
+         * and a boolean indicating if we are on vacation,
+         * return a string of the form "7:00" indicating when the alarm clock should ring.
+         * Weekdays, the alarm should be "7:00" and on the weekend it should be "10:00".
+         * Unless we are on vacation -- then on weekdays it should be "10:00" and weekends it should be "off".
+         *
+         * alarmClock(1, false) → "7:00"
+         * alarmClock(5, false) → "7:00"
+         * alarmClock(0, false) → "10:00"
+         */
+
+        if (vacation) {
+            if (day >= 1 && day <= 5) {
+                return "10:00";
+            }
+            return "off";
+        }
+        if (day >= 1 && day <= 5) {
+            return "7:00";
+        }
+        return "10:00";
+
+    }
+
+    public static boolean love6(int a, int b) {
+        /**
+         * The number 6 is a truly great number.
+         * Given two int values, a and b, return true if either one is 6.
+         * Or if their sum or difference is 6.
+         * Note: the function Math.abs(num) computes the absolute value of a number.
+         *
+         * love6(6, 4) → true
+         * love6(4, 5) → false
+         * love6(1, 5) → true
+         */
+
+        int sum = a + b;
+        int dif = Math.abs(a - b);
+
+        if ((a == 6 || b == 6) || (sum == 6 || dif == 6)) {
+            return true;
+
+        }
+        return false;
+
+    }
+
+    public static boolean in1To10(int n, boolean outsideMode) {
+        /**
+         * Given a number n, return true if n is in the range 1..10, inclusive.
+         * Unless outsideMode is true, in which case return true if the number is less or equal to 1,
+         * or greater or equal to 10.
+         *
+         *
+         * in1To10(5, false) → true
+         * in1To10(11, false) → false
+         * in1To10(11, true) → true
+         */
+
+        if (!outsideMode) {
+            if (n >= 1 && n <= 10) {
+                return true;
+
+            }
+            return false;
+
+        } else {
+            if (n <= 1 || n >= 10) {
+                return true;
+            }
+            return false;
+
+        }
 
 
-
+    }
 
 
 }
